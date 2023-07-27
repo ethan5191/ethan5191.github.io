@@ -108,9 +108,18 @@ li {
     display: none;
 }
 
+.expandable-article {
+  display: flex; /* Create a row layout */
+  flex-wrap: wrap; /* Allow items to wrap to new rows */
+}
+
 .expandable-article .truncated-text {
+    width: 17.85%; /* Each partial text takes 25% width (4 items in a row) */
+    text-align: center;
+    border: 1px solid #000000;
     cursor: pointer;
-    font-size: 1em;
+    padding: 0 2.5%;
+    margin: 0 1%;
 }
 
 .expandable-article .truncated-text:hover {
@@ -121,16 +130,17 @@ li {
     display: none;
 }
 
-.expandable-article.expanded .full-text {
-    display: block;
+.expandable-article .full-text {
+    display: none; /* Hide the full text by default */
     width: 75%;
-    text-align: center;
+    text-align: left;
     margin: auto;
-    font-size: 1em;
+    margin-top: 1%; /* Add some spacing between partial and full texts */
+    margin-bottom: 1%;
 }
 
-.expandable-article.expanded .truncated-text {
-    display: none;
+.selected-partial {
+  background-color: #c0c0c0;
 }
 
 .expandable-question .full-text {
@@ -193,13 +203,23 @@ li {
 
 .main_content.dark-mode .info_header {
     background-color: #808080;
-    /* border-bottom: 2px solid #FFFDD0; */
 }
 
 .main_content.dark-mode .info_header:hover {
     background-color: #c0c0c0;
 }
 
+.main_content.dark-mode .expandable-article .truncated-text {
+    border: 1px solid #ffffff;
+}
+
+.main_content.dark-mode .expandable-article .truncated-text:hover {
+    background-color: #c0c0c0;
+}
+
+.dark-mode .selected-partial {
+    background-color: #808080;
+}
 
 /* crimson and cream styles */
 .crimson-cream {
@@ -217,9 +237,20 @@ li {
 
 .main_content.crimson-cream .info_header {
     background-color: #808080;
-    /* border-bottom: 2px solid #FFFDD0; */
 }
 
 .main_content.crimson-cream .info_header:hover {
     background-color: #c0c0c0;
+}
+
+.main_content.crimson-cream .expandable-article .truncated-text {
+    border: 1px solid #fffdd0;
+}
+
+.main_content.crimson-cream .expandable-article .truncated-text:hover {
+    background-color: #c0c0c0;
+}
+
+.crimson-cream .selected-partial {
+    background-color: #808080;
 }

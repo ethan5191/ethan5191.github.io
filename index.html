@@ -15,290 +15,325 @@
     <!--    <img src="temp.jpg" alt="Yea it broke!!!">-->
 </header>
 <body>
-    <div class="main_content">
-        <div>
-            <label id="dark-mode-label" class="tooltip"><span class="tooltiptext">Devs love dark mode.</span>
-                <input type="checkbox" id="dark-mode-toggle" onchange="toggleDarkMode()"> Dark Mode
-            </label>
-            <label id="crimson-mode-label" class="tooltip"><span class="tooltiptext" style="color: #fffdd0">
-                I only cared if I could, not if I should.<br/><span style="color: #dc143c;">GO HOOSIERS</span>!!!!.</span>
-                <input type="checkbox" id="crimson-mode-toggle" onchange="toggleCrimsonMode()"> Crimson Cream Mode
-            </label>
-            <hr/>
-            <article class="expandable-article">
-                <p class="truncated-text">Graduated from IUS...</p>
-                <p class="full-text">
-                    I graduated from Indiana University Southeast in 2014 with a Bachelor’s degree in Informatics. I chose
-                    Informatics over computer science because at the time I thought I would prefer a role as a product owner
-                    instead of a developer. Over the years of working as a developer though, I have come to realize that
-                    I am much more comfortable as a developer and enjoy being a developer a lot more than I would ever
-                    enjoy being a product owner.
-                </p>
-            </article>
-            <article class="expandable-article">
-                <p class="truncated-text">College Learning...</p>
-                <p class="full-text">
-                    My college studies had me learning to work with Java, C, C#, PHP, HTML, and CSS. For my capstone project
-                    I was the developer on a three-person team that created a new website for the New Albany fire department.
-                    For this project I learned to use Joomla and created an interactive calendar in PHP. We created a
-                    basic HTML admin suite as well which allowed the admins to make specific changes to the way that the
-                    calendars rules were enforced. The database for this application was a MySql database run through
-                    PhpMyadmin. It was in this capstone project that I realized how much I enjoyed the challenges that
-                    working with code can present.
-                </p>
-            </article>
-            <article class="expandable-article">
-                <p class="truncated-text">Began at TSO...</p>
-                <p class="full-text">
-                    I joined the United States Marine Corps working at the TSO in July 2015 as a contractor. A year later I
-                    had progressed enough to earn a spot as a federal civilian as part of the USMC. I have grown from a
-                    new developer to a seasoned Java developer who can comfortably lead a development team. I have been
-                    lucky enough to work with some great people during my time at TSO. My product owner, supervisor, and
-                    numerous former team members have all made working on MROWS an absolute pleasure. My time at TSO has
-                    taught me to become more detailed in my coding technique. As a consequence of this, I have encouraged
-                    my young developers to also try to be as detail oriented as possible.
-                </p>
-            </article>
-            <article class="expandable-article">
-                <p class="truncated-text">Why I do this...</p>
-                <p class="full-text">
-                    The short answer of why I do this is because my wife and daughter depend on me to do it, to provide for
-                    them. Outside of that I enjoy working with code and solving problems using code. Growing up I always
-                    wanted to build stuff like my friends who were good with wood working, but I didn't have the skills to
-                    do so. With code, I am able to 'create' stuff. It's not the same as wood working for instance, but
-                    it's close enough, and I enjoy it. Plus it's nice being able to work with code and do simple things
-                    like auto login to an app, or easily track your families finances with just a single click.
-                </p>
-            </article>
-        </div>
+<div class="main_content">
+    <div>
+        <label id="dark-mode-label" class="tooltip"><span class="tooltiptext">Devs love dark mode.</span>
+            <input type="checkbox" id="dark-mode-toggle" onchange="toggleDarkMode()"> Dark Mode
+        </label>
+        <label id="crimson-mode-label" class="tooltip"><span class="tooltiptext" style="color: #fffdd0">
+                I only cared if I could, not if I should.<br/><span
+                style="color: #dc143c;">GO HOOSIERS</span>!!!!.</span>
+            <input type="checkbox" id="crimson-mode-toggle" onchange="toggleCrimsonMode()"> Crimson Cream Mode
+        </label>
         <hr/>
-        <div class="app_info_container">
-            <div class="app_info">
-                <fieldset>
-                    <legend class="legend_text">
-                        MROWS Web application
-                    </legend>
-                    <ul>
-                        <li class="ul-header">Marine Resource Order Writing Service (MROWS)</li>
-                        <li>Monolithic web application.</li>
-                        <li>Java Backend.</li>
-                        <li>Basic HTML, CSS, JSP, with a little JavaScript and JQuery for the UI.</li>
-                        <li>Weblogic servers.</li>
-                        <li>Oracle Database.</li>
-                        <li>Struts 1 application that is slowly been migrated to Spring MVC.</li>
-                    </ul>
-                </fieldset>
-                <section>
-                    <h3 class="center_text">Personal MROWS accomplishments</h3>
-                    <dl>
-                        <dt id="tcm" onclick="displayDd('tcmDD');" class="info_header">Reserve Travel Module</dt>
-                        <dd id="tcmDD" class="info_detail">Working with another dev team we created a Soap web service between
-                            MROWS and DTMS. This web service allowed Marines to complete and submit a travel claim
-                            electronically after finishing their orders. This resulted in the Marine getting paid in
-                            hours instead of weeks. I worked closely with my team lead to design the database structure
-                            for the travel claims. We also created the Soap web service call to DTMS, and created two web
-                            services in MROWS that allowed DTMS to send us either reject or recon claim information.
-                        </dd>
-                        <dt id="dai" onclick="displayDd('daiDD');" class="info_header">DAI Initiative</dt>
-                        <dd id="daiDD" class="info_detail">The DAI initiative was the USMC wide transition from the SABRS
-                            accounting system to the DAI accounting system. This involved determining which orders in
-                            MROWS needed to go to DAI, populating the newly created DAI tables, and building the process
-                            to create the XML file that was sent to DAI. The team also created a process to receive and
-                            parse DAI acknowledgement files so that we could track the status of the orders we had sent to DAI.
-                        </dd>
-                        <dt id="fortify" onclick="displayDd('fortifyDD');" class="info_header">HP Fortify</dt>
-                        <dd id="fortifyDD" class="info_detail">Our team was one of the first teams to get HP fortify setup. As a
-                            result, we lead the charge in creating common solutions for the rest of our division to use
-                            to remove findings across the division. Over the span of about 3 months we worked to remove
-                            almost 5000 security findings that existed in MROWS and other applications within the division.
-                        </dd>
-                        <dt id="jenkins" onclick="displayDd('jenkinsDD');" class="info_header">Hudson to Jenkins</dt>
-                        <dd id="jenkinsDD" class="info_detail">I worked closely with an experienced engineer to get the MROWS build
-                            process moved over to Jenkins. This involved creating a JenkinsFile and setting up the different
-                            jobs for test and production builds. The result was a faster build process that is now 100%
-                            auditable. The Jenkins process does the entire production build process. It merges the release
-                            branch into trunk, creates a tag, does the fortify scan, and creates and stages the MROWS
-                            war to that is to be deployed.
-                        </dd>
-                        <dt id="spring" onclick="displayDd('springDD');" class="info_header">Spring Migration</dt>
-                        <dd id="springDD" class="info_detail">In 2018 the team began the long process of learning to use Spring MVC
-                            and migrating MROWS from Struts 1 to Spring 5 using the MVC architecture. I took the lead on
-                            this project and created the blueprint for converting two of the bigger areas of the
-                            application. This process involved converting our old action classes to Spring controllers
-                            and services. We also had to remove the old struts html tags and replace them with JSTL tags.
-                        </dd>
-                        <dt id="reports" onclick="displayDd('reportsDD');" class="info_header">iReport Migration</dt>
-                        <dd id="reportsDD" class="info_detail">When the DoD purchased iText 7 licenses for all applications, we
-                            were forced to add it to our application. That way any new PDFs that we create will be created
-                            using the newest version of iText. This caused us to have to migrate all of our old reports
-                            off of iReport and recreate them using Jasper Soft Studio. I took the lead on this project to
-                            transfer all of our reports. To date I have about 20 of the 107 reports moved over.
-                        </dd>
-                        <dt id="other" onclick="displayDd('otherDD');" class="info_header">Other</dt>
-                        <dd id="otherDD" class="info_detail">
-                            <ul>
-                                <li>Creating numerous admin pieces to allow specific changes to be handled by application
-                                    administrators. This alters the way specific parts of the app work.
-                                </li>
-                                <li>JQuery UI migration was migrating a small part of the application to test using JQuery
-                                    as the new UI of the application. This has been put on hold as the division decides
-                                    what UI tools it wants all applications to use.
-                                </li>
-                                <li>Reporting Endorsement module, was a new piece that was created to give order writers the
-                                    ability to create an endorsement on any order. I created the initial inbox and helped
-                                    with database design work, but was mainly a tester on this project.
-                                </li>
-                                <li>Updates to numerous logic pieces throughout the application. Over the years I have
-                                    altered many different parts of the applications business logic.
-                                </li>
-                                <li>Mentoring young developers. Since the end of 2019 I have been the team lead. This has
-                                    seen me mentor numerous young developers on my team. The young developers I have helped
-                                    have had different backgrounds.
-                                </li>
-                            </ul>
-                        </dd>
-                    </dl>
-                </section>
+        <div class="expandable-article">
+            <div class="truncated-text" onclick="toggleFullText(1)">Graduated from IUS...</div>
+            <div class="truncated-text" onclick="toggleFullText(2)">College Studies...</div>
+            <div class="truncated-text" onclick="toggleFullText(3)">Started at TSO...</div>
+            <div class="truncated-text" onclick="toggleFullText(4)">Why I do this...</div>
+            <div class="full-text" id="article1">
+                I graduated from <a href="https://southeast.iu.edu/" target="_blank">Indiana University Southeast</a>
+                in 2014 with a Bachelor's degree in Informatics. I chose informatics over computer science because at
+                the time I thought I would prefer a role as a product owner instead of a developer. Over the years of
+                working as a developer though, I have come to realize that I am much more comfortable as a developer
+                and enjoy being a developer a lot more than I would ever enjoy being a product owner.
             </div>
-            <div class="app_info">
-                <fieldset>
-                    <legend class="legend_text">
-                        MCPDT Web application
-                    </legend>
-                    <ul>
-                        <li class="ul-header">Marine Corps Per Diem & Travel (MCPDT)</li>
-                        <li>Mainly a bunch of different web services. (SOAP)</li>
-                        <li>Java Backend.</li>
-                        <li>Minimal UI that is HTML, CSS, and JSPs.</li>
-                        <li>Weblogic servers.</li>
-                        <li>Oracle Database.</li>
-                        <li>Struts 1 application. Will eventually get moved to Spring MVC in the future.</li>
-                    </ul>
-                </fieldset>
-                <section>
-                    <h3 class="center_text">Personal MCPDT accomplishments</h3>
-                    <dl>
-                        <dt id="eoy" onclick="displayDd('eoyDD');" class="info_header">End Of Year Processes</dt>
-                        <dd id="eoyDD" class="info_detail">Our team took over the MCPDT code base in June 2022. The fy closeout in
-                            September 2022 was the first time that we had to handle the numerous database scripts to set
-                            up the 2023 funding lines. MCPDT is a funding application that calculates travel and per diem
-                            funding for different types of orders. Since it deals with funding it is paramount that this
-                            application works properly. As the team lead, I took on this responsibility to work closely with the product owner
-                            to ensure that all the scripts were put together correctly and ran without issue. This lead to a
-                            successful start to the 2023 funding year, with MCPDT continuing to create funding lines for all
-                            the different services that call it.
-                        </dd>
-                        <dt id="tab1" onclick="displayDd('tab1DD');" class="info_header">April 2023 changes</dt>
-                        <dd id="tab1DD" class="info_detail">The April 2023 release saw numerous changes to the data that MCPDT
-                            received from MCTFS on its nightly feed. These changes required updating the type files that
-                            read the feed files in every night to ensure they could handle the new file layouts. We also
-                            had to pick up a new file as well as there was new data being passed the MCPDT needed for
-                            future projects.
-                        </dd>
-                        <dt id="sloa" onclick="displayDd('sloaDD');" class="info_header">SLOA</dt>
-                        <dd id="sloaDD" class="info_detail">As part of the DAI transition, all applications are required to change
-                            from the LOA to the SLOA by October 1, 2024. MCPDT intends to be ahead of the ball on this
-                            deadline, as we are working on getting the SLOA fully implemented into our system by
-                            October 1, 2023. I worked closely with the product owner to get the proper table structure
-                            created. I then updated the business logic to ensure that both the LOA and SLOA are attached
-                            to a given order. This way all of our connecting applications can still use the LOA for now,
-                            but when they decide to switch to the SLOA we just have to send that info back to them. This
-                            also acts as a test as MROWS will have to change to the SLOA as well, but has more projects
-                            in front of SLOA.
-                        </dd>
-                        <dt id="dtms" onclick="displayDd('dtmsDD');" class="info_header">DTMS Web Service</dt>
-                        <dd id="dtmsDD" class="info_detail">As part of the September release, we are creating a new web service
-                            between MCPDT and DTMS. This web service will allow DTMS to send travel claim information
-                            to MCPDT, we will update the funding amount on the order, and send the updated amount on to
-                            DAI. I created the WSDL, XSD, and all backing objects needed to allow DTMS to connect to
-                            MCPDT and send the necessary data. I have also added in the necessary business logic to
-                            ensure that the orders pay amount gets updated and sent to DAI.
-                        </dd>
-                    </dl>
-                </section>
+            <div class="full-text" id="article2">
+                My college studies had me learning to work with Java, C, C#, PHP, HTML, and CSS. For my capstone project
+                I was the developer on a three-person team that created a new website for the New Albany fire department.
+                For this project I learned to use Joomla and created an interactive calendar in PHP. We created a
+                basic HTML admin suite as well which allowed the admins to make specific changes to the way that the
+                calendars rules were enforced. The database for this application was a MySql database run through
+                PhpMyadmin. It was in this capstone project that I realized how much I enjoyed the challenges that
+                working with code can present.
+            </div>
+            <div class="full-text" id="article3">
+                I joined the United States Marine Corps working at the TSO in July 2015 as a contractor. A year later I
+                had progressed enough to earn a spot as a federal civilian as part of the USMC. I have grown from a
+                new developer to a seasoned Java developer who can comfortably lead a development team. I have been
+                lucky enough to work with some great people during my time at TSO. My product owner, supervisor, and
+                numerous former team members have all made working on MROWS an absolute pleasure. My time at TSO has
+                taught me to become more detailed in my coding technique. As a consequence of this, I have encouraged
+                my young developers to also try to be as detail oriented as possible.
+            </div>
+            <div class="full-text" id="article4">
+                The short answer of why I do this is because my wife and daughter depend on me to do it, to provide for
+                them. Outside of that I enjoy working with code and solving problems using code. Growing up I always
+                wanted to build stuff like my friends who were good with wood working, but I didn't have the skills to
+                do so. With code, I am able to 'create' stuff. It's not the same as wood working for instance, but
+                it's close enough, and I enjoy it. Plus it's nice being able to work with code and do simple things
+                like auto login to an app, or easily track your families finances with just a single click.
             </div>
         </div>
-        <hr/>
-        <h3 class="center_text">Commonly asked questions</h3>
-        <div class="app_info_container">
-            <div class="app_info">
-                <dl>
-                    <dt id="strength" onclick="displayDd('strengthAnswer');" class="info_header">Biggest Strength?</dt>
-                    <dd id="strengthAnswer" class="info_detail">Overall Java experience and being detail oriented in all phases
-                    of development work. I strive to be detail oriented when refining stories, writing and reviewing code,
-                    and when testing changes. </dd>
-                    <dt id="weakness" onclick="displayDd('weaknessAnswer');" class="info_header">Biggest Weakness?</dt>
-                    <dd id="weaknessAnswer" class="info_detail">My two main weaknesses I believe are that my experience is very
-                    narrow focused due to be in the federal space for so long. I also am a very introverted person when
-                    I don't know people, so I tend to keep to myself until I get comfortable with the people I work with.</dd>
-                    <dt id="favorite" onclick="displayDd('favoriteAnswer');" class="info_header">Favorite part of development?</dt>
-                    <dd id="favoriteAnswer" class="info_detail">Backend development working with Java. Java just does things in
-                    such a way that logically works for me, I think it's because everything is an object.</dd>
-                    <dt id="least" onclick="displayDd('leastAnswer');" class="info_header">Least favorite part of development?</dt>
-                    <dd id="leastAnswer" class="info_detail">UI development. I don't have that natural feel for what people
-                    think looks good so, I struggle with CSS and designing nice looking pages. I don't like loosely typed
-                    languages like JavaScript. I can work with it, but I don't enjoy it. </dd>
-                    <dt id="frustrating" onclick="displayDd('frustratingAnswer');" class="info_header">Most frustrating
-                        part of development?</dt>
-                    <dd id="frustratingAnswer" class="info_detail">Probably the fact that depending on the time and day there can
-                    be multiple answers to a single problem. Depending on who you talk to, changes which solution is the
-                    best one. So it's hard to determine at times what the 'best' approach is. </dd>
-                </dl>
-            </div>
-            <div class="app_info">
-                <dl>
-                    <dt id="favProj" onclick="displayDd('favProjAnswer');" class="info_header">Favorite project?</dt>
-                    <dd id="favProjAnswer" class="info_detail">Reserve Travel Module. I got to work with a good buddy of mine
-                        throughout the whole process. We learned how to create Soap services together. Plus we knew what the
-                        end goal was and the benefit it was going to give the end user.</dd>
-                    <dt id="leastProj" onclick="displayDd('leastProjAnswer');" class="info_header">Least favorite project?</dt>
-                    <dd id="leastProjAnswer" class="info_detail">DAI Initiative. This was a poorly planned project with way
-                        to aggressive of a timeline. This led to issues on both sides when we went to production.</dd>
-                    <dt id="favTech" onclick="displayDd('favTechAnswer');" class="info_header">Favorite tech or tool?</dt>
-                    <dd id="favTechAnswer" class="info_detail">IntelliJ IDE. Best development tool out there I think.
-                        I also enjoy working with Spring. I love the controller annotations, so much cleaner than a massive
-                        struts-config.xml. Spring controllers are also easier to explain.</dd>
-                    <dt id="collection" onclick="displayDd('collectionAnswer');" class="info_header">Favorite Java Collection?</dt>
-                    <dd id="collectionAnswer" class="info_detail">Seriously got asked this once in an interview. I was not
-                        expecting it at all. Set is my answer though, specifically the HashSet. I like that it's easy to use
-                        to determine if a record for a given value already exists. The .contains method is very handy.
-                        <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html" target="_blank">Set Interface</a> </dd>
-                </dl>
-            </div>
-        </div>
-        <hr/>
-        <div>
-            <article>
-                <h3 class="center_text">About Me</h3>
-                <ul class="about-me">
-                    <li>Family is very important to me.</li>
-                    <li>Outside of work I enjoy working with code. I taught myself how to use Spring controllers while
-                        working at home with IntelliJ community edition.
-                    </li>
-                    <li>I also enjoy many sports: racing (Formula 1, Nascar, IndyCar, IMSA, Formula E), basketball (Indiana Pacers,
-                        Indiana Hoosiers, Indiana Fever), football (San Fransisco 49ers and Indianapolis Colts), tennis,
-                        the Olympics, the women’s world cup, and the Tour De France. My weekends are usually filled with
-                        watching some kind of sporting event.
-                    </li>
-                    <li>I enjoy playing video games, I typically play story driven games like The Last of Us, Horizon Zero
-                        Dawn, and Mass Effect. I also enjoy sporting games like Madden, F1, and iRacing.
-                    </li>
-                    <li>Favorite music includes: Evanescence, 3 Doors Down, Five Finger Death Punch, Garth Brooks, and
-                    Jason Aldean.</li>
-                    <li>Favorite movies include: all 3 IronMan movies, Days of Thunder, James Cameron's Avatar 1 and 2,
-                    iRobot, and The Incredibles 1 and 2.</li>
-                    <li>I am detail oriented at work and at home.</li>
-                </ul>
-            </article>
-        </div>
-        <hr/>
-        <script src="article.js"></script>
     </div>
+    <hr/>
+    <div class="app_info_container">
+        <div class="app_info">
+            <fieldset>
+                <legend class="legend_text">
+                    MROWS Web application
+                </legend>
+                <ul>
+                    <li class="ul-header">Marine Resource Order Writing Service (MROWS)</li>
+                    <li>Monolithic web application.</li>
+                    <li>Java Backend.</li>
+                    <li>Basic HTML, CSS, JSP, with a little JavaScript and JQuery for the UI.</li>
+                    <li>Weblogic servers.</li>
+                    <li>Oracle Database.</li>
+                    <li>Struts 1 application that is slowly been migrated to Spring MVC.</li>
+                </ul>
+            </fieldset>
+            <section>
+                <h3 class="center_text">Personal MROWS accomplishments</h3>
+                <dl>
+                    <dt id="tcm" onclick="displayDd('tcmDD');" class="info_header">Reserve Travel Module</dt>
+                    <dd id="tcmDD" class="info_detail">Working with another dev team we created a Soap web service
+                        between
+                        MROWS and DTMS. This web service allowed Marines to complete and submit a travel claim
+                        electronically after finishing their orders. This resulted in the Marine getting paid in
+                        hours instead of weeks. I worked closely with my team lead to design the database structure
+                        for the travel claims. We also created the Soap web service call to DTMS, and created two web
+                        services in MROWS that allowed DTMS to send us either reject or recon claim information.
+                    </dd>
+                    <dt id="dai" onclick="displayDd('daiDD');" class="info_header">DAI Initiative</dt>
+                    <dd id="daiDD" class="info_detail">The DAI initiative was the USMC wide transition from the SABRS
+                        accounting system to the DAI accounting system. This involved determining which orders in
+                        MROWS needed to go to DAI, populating the newly created DAI tables, and building the process
+                        to create the XML file that was sent to DAI. The team also created a process to receive and
+                        parse DAI acknowledgement files so that we could track the status of the orders we had sent to
+                        DAI.
+                    </dd>
+                    <dt id="fortify" onclick="displayDd('fortifyDD');" class="info_header">HP Fortify</dt>
+                    <dd id="fortifyDD" class="info_detail">Our team was one of the first teams to get HP fortify setup.
+                        As a
+                        result, we lead the charge in creating common solutions for the rest of our division to use
+                        to remove findings across the division. Over the span of about 3 months we worked to remove
+                        almost 5000 security findings that existed in MROWS and other applications within the division.
+                    </dd>
+                    <dt id="jenkins" onclick="displayDd('jenkinsDD');" class="info_header">Hudson to Jenkins</dt>
+                    <dd id="jenkinsDD" class="info_detail">I worked closely with an experienced engineer to get the
+                        MROWS build
+                        process moved over to Jenkins. This involved creating a JenkinsFile and setting up the different
+                        jobs for test and production builds. The result was a faster build process that is now 100%
+                        auditable. The Jenkins process does the entire production build process. It merges the release
+                        branch into trunk, creates a tag, does the fortify scan, and creates and stages the MROWS
+                        war to that is to be deployed.
+                    </dd>
+                    <dt id="spring" onclick="displayDd('springDD');" class="info_header">Spring Migration</dt>
+                    <dd id="springDD" class="info_detail">In 2018 the team began the long process of learning to use
+                        Spring MVC
+                        and migrating MROWS from Struts 1 to Spring 5 using the MVC architecture. I took the lead on
+                        this project and created the blueprint for converting two of the bigger areas of the
+                        application. This process involved converting our old action classes to Spring controllers
+                        and services. We also had to remove the old struts html tags and replace them with JSTL tags.
+                    </dd>
+                    <dt id="reports" onclick="displayDd('reportsDD');" class="info_header">iReport Migration</dt>
+                    <dd id="reportsDD" class="info_detail">When the DoD purchased iText 7 licenses for all applications,
+                        we
+                        were forced to add it to our application. That way any new PDFs that we create will be created
+                        using the newest version of iText. This caused us to have to migrate all of our old reports
+                        off of iReport and recreate them using Jasper Soft Studio. I took the lead on this project to
+                        transfer all of our reports. To date I have about 20 of the 107 reports moved over.
+                    </dd>
+                    <dt id="other" onclick="displayDd('otherDD');" class="info_header">Other</dt>
+                    <dd id="otherDD" class="info_detail">
+                        <ul>
+                            <li>Creating numerous admin pieces to allow specific changes to be handled by application
+                                administrators. This alters the way specific parts of the app work.
+                            </li>
+                            <li>JQuery UI migration was migrating a small part of the application to test using JQuery
+                                as the new UI of the application. This has been put on hold as the division decides
+                                what UI tools it wants all applications to use.
+                            </li>
+                            <li>Reporting Endorsement module, was a new piece that was created to give order writers the
+                                ability to create an endorsement on any order. I created the initial inbox and helped
+                                with database design work, but was mainly a tester on this project.
+                            </li>
+                            <li>Updates to numerous logic pieces throughout the application. Over the years I have
+                                altered many different parts of the applications business logic.
+                            </li>
+                            <li>Mentoring young developers. Since the end of 2019 I have been the team lead. This has
+                                seen me mentor numerous young developers on my team. The young developers I have helped
+                                have had different backgrounds.
+                            </li>
+                        </ul>
+                    </dd>
+                </dl>
+            </section>
+        </div>
+        <div class="app_info">
+            <fieldset>
+                <legend class="legend_text">
+                    MCPDT Web application
+                </legend>
+                <ul>
+                    <li class="ul-header">Marine Corps Per Diem & Travel (MCPDT)</li>
+                    <li>A bunch of different SOAP web services.</li>
+                    <li>Java Backend.</li>
+                    <li>Minimal UI that is HTML, CSS, and JSPs.</li>
+                    <li>Weblogic servers.</li>
+                    <li>Oracle Database.</li>
+                    <li>Struts 1 application. Will eventually get moved to Spring MVC in the future.</li>
+                </ul>
+            </fieldset>
+            <section>
+                <h3 class="center_text">Personal MCPDT accomplishments</h3>
+                <dl>
+                    <dt id="eoy" onclick="displayDd('eoyDD');" class="info_header">End Of Year Processes</dt>
+                    <dd id="eoyDD" class="info_detail">Our team took over the MCPDT code base in June 2022. The fy
+                        closeout in
+                        September 2022 was the first time that we had to handle the numerous database scripts to set
+                        up the 2023 funding lines. MCPDT is a funding application that calculates travel and per diem
+                        funding for different types of orders. Since it deals with funding it is paramount that this
+                        application works properly. As the team lead, I took on this responsibility to work closely with
+                        the product owner
+                        to ensure that all the scripts were put together correctly and ran without issue. This lead to a
+                        successful start to the 2023 funding year, with MCPDT continuing to create funding lines for all
+                        the different services that call it.
+                    </dd>
+                    <dt id="tab1" onclick="displayDd('tab1DD');" class="info_header">April 2023 changes</dt>
+                    <dd id="tab1DD" class="info_detail">The April 2023 release saw numerous changes to the data that
+                        MCPDT
+                        received from MCTFS on its nightly feed. These changes required updating the type files that
+                        read the feed files in every night to ensure they could handle the new file layouts. We also
+                        had to pick up a new file as well as there was new data being passed the MCPDT needed for
+                        future projects.
+                    </dd>
+                    <dt id="sloa" onclick="displayDd('sloaDD');" class="info_header">SLOA</dt>
+                    <dd id="sloaDD" class="info_detail">As part of the DAI transition, all applications are required to
+                        change
+                        from the LOA to the SLOA by October 1, 2024. MCPDT intends to be ahead of the ball on this
+                        deadline, as we are working on getting the SLOA fully implemented into our system by
+                        October 1, 2023. I worked closely with the product owner to get the proper table structure
+                        created. I then updated the business logic to ensure that both the LOA and SLOA are attached
+                        to a given order. This way all of our connecting applications can still use the LOA for now,
+                        but when they decide to switch to the SLOA we just have to send that info back to them. This
+                        also acts as a test as MROWS will have to change to the SLOA as well, but has more projects
+                        in front of SLOA.
+                    </dd>
+                    <dt id="dtms" onclick="displayDd('dtmsDD');" class="info_header">DTMS Web Service</dt>
+                    <dd id="dtmsDD" class="info_detail">As part of the September release, we are creating a new web
+                        service
+                        between MCPDT and DTMS. This web service will allow DTMS to send travel claim information
+                        to MCPDT, we will update the funding amount on the order, and send the updated amount on to
+                        DAI. I created the WSDL, XSD, and all backing objects needed to allow DTMS to connect to
+                        MCPDT and send the necessary data. I have also added in the necessary business logic to
+                        ensure that the orders pay amount gets updated and sent to DAI.
+                    </dd>
+                </dl>
+            </section>
+        </div>
+    </div>
+    <hr/>
+    <h3 class="center_text">Commonly asked questions</h3>
+    <div class="app_info_container">
+        <div class="app_info">
+            <dl>
+                <dt id="strength" onclick="displayDd('strengthAnswer');" class="info_header">Biggest Strength?</dt>
+                <dd id="strengthAnswer" class="info_detail">Overall Java experience and being detail oriented in all
+                    phases
+                    of development work. I strive to be detail oriented when refining stories, writing and reviewing
+                    code,
+                    and when testing changes.
+                </dd>
+                <dt id="weakness" onclick="displayDd('weaknessAnswer');" class="info_header">Biggest Weakness?</dt>
+                <dd id="weaknessAnswer" class="info_detail">My two main weaknesses I believe are that my experience is
+                    very
+                    narrow focused due to be in the federal space for so long. I also am a very introverted person when
+                    I don't know people, so I tend to keep to myself until I get comfortable with the people I work
+                    with.
+                </dd>
+                <dt id="favorite" onclick="displayDd('favoriteAnswer');" class="info_header">Favorite part of
+                    development?
+                </dt>
+                <dd id="favoriteAnswer" class="info_detail">Backend development working with Java. Java just does things
+                    in
+                    such a way that logically works for me, I think it's because everything is an object.
+                </dd>
+                <dt id="least" onclick="displayDd('leastAnswer');" class="info_header">Least favorite part of
+                    development?
+                </dt>
+                <dd id="leastAnswer" class="info_detail">UI development. I don't have that natural feel for what people
+                    think looks good so, I struggle with CSS and designing nice looking pages. I don't like loosely
+                    typed
+                    languages like JavaScript. I can work with it, but I don't enjoy it.
+                </dd>
+                <dt id="frustrating" onclick="displayDd('frustratingAnswer');" class="info_header">Most frustrating
+                    part of development?
+                </dt>
+                <dd id="frustratingAnswer" class="info_detail">Probably the fact that depending on the time and day
+                    there can
+                    be multiple answers to a single problem. Depending on who you talk to, changes which solution is the
+                    best one. So it's hard to determine at times what the 'best' approach is.
+                </dd>
+            </dl>
+        </div>
+        <div class="app_info">
+            <dl>
+                <dt id="favProj" onclick="displayDd('favProjAnswer');" class="info_header">Favorite project?</dt>
+                <dd id="favProjAnswer" class="info_detail">Reserve Travel Module. I got to work with a good buddy of
+                    mine
+                    throughout the whole process. We learned how to create Soap services together. Plus we knew what the
+                    end goal was and the benefit it was going to give the end user.
+                </dd>
+                <dt id="leastProj" onclick="displayDd('leastProjAnswer');" class="info_header">Least favorite project?
+                </dt>
+                <dd id="leastProjAnswer" class="info_detail">DAI Initiative. This was a poorly planned project with way
+                    to aggressive of a timeline. This led to issues on both sides when we went to production.
+                </dd>
+                <dt id="favTech" onclick="displayDd('favTechAnswer');" class="info_header">Favorite tech or tool?</dt>
+                <dd id="favTechAnswer" class="info_detail">IntelliJ IDE. Best development tool out there I think.
+                    I also enjoy working with Spring. I love the controller annotations, so much cleaner than a massive
+                    struts-config.xml. Spring controllers are also easier to explain.
+                </dd>
+                <dt id="collection" onclick="displayDd('collectionAnswer');" class="info_header">Favorite Java
+                    Collection?
+                </dt>
+                <dd id="collectionAnswer" class="info_detail">Seriously got asked this once in an interview. I was not
+                    expecting it at all. Set is my answer though, specifically the HashSet. I like that it's easy to use
+                    to determine if a record for a given value already exists. The .contains method is very handy.
+                    <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html" target="_blank">Set
+                        Interface</a></dd>
+            </dl>
+        </div>
+    </div>
+    <hr/>
+    <div>
+        <article>
+            <h3 class="center_text">About Me</h3>
+            <ul class="about-me">
+                <li>Family is very important to me.</li>
+                <li>Outside of work I enjoy working with code. I taught myself how to use Spring controllers while
+                    working at home with IntelliJ community edition.
+                </li>
+                <li>I also enjoy many sports: racing (Formula 1, Nascar, IndyCar, IMSA, Formula E), basketball (Indiana
+                    Pacers,
+                    Indiana Hoosiers, Indiana Fever), football (San Fransisco 49ers and Indianapolis Colts), tennis,
+                    the Olympics, the women’s world cup, and the Tour De France. My weekends are usually filled with
+                    watching some kind of sporting event.
+                </li>
+                <li>I enjoy playing video games, I typically play story driven games like The Last of Us, Horizon Zero
+                    Dawn, and Mass Effect. I also enjoy sporting games like Madden, F1, and iRacing.
+                </li>
+                <li>Favorite music includes: Evanescence, 3 Doors Down, Five Finger Death Punch, Garth Brooks, and
+                    Jason Aldean.
+                </li>
+                <li>Favorite movies include: all 3 IronMan movies, Days of Thunder, James Cameron's Avatar 1 and 2,
+                    iRobot, and The Incredibles 1 and 2.
+                </li>
+                <li>I am detail oriented at work and at home.</li>
+            </ul>
+        </article>
+    </div>
+    <hr/>
+    <script src="article.js"></script>
+</div>
 </body>
 <footer>
     <div class="center_text">
         <p class="contact_info_p footer_text">5361 Denoise Street Columbus, IN 47201</p>
-        <p class="social_info_p"><a href="https://www.linkedin.com/in/ethan-vanderbur-2797aa260/" target="_blank">Connect on Linked In</a></p>
+        <p class="social_info_p"><a href="https://www.linkedin.com/in/ethan-vanderbur-2797aa260/" target="_blank">Connect
+            on Linked In</a></p>
     </div>
 </footer>
 </html>
