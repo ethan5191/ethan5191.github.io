@@ -109,17 +109,19 @@ li {
 }
 
 .expandable-article {
-  display: flex; /* Create a row layout */
-  flex-wrap: wrap; /* Allow items to wrap to new rows */
+    display: flex; /* Create a row layout */
+    flex-wrap: wrap; /* Allow items to wrap to new rows */
 }
 
 .expandable-article .truncated-text {
-    width: 17.85%; /* Each partial text takes 25% width (4 items in a row) */
+    width: 17.25%;
     text-align: center;
-    border: 1px solid #000000;
+    border: 0.1em solid #000000;
     cursor: pointer;
     padding: 0 2.5%;
-    margin: 0 1%;
+    margin: auto;
+    margin-top: .5%;
+    margin-bottom: .5%;
 }
 
 .expandable-article .truncated-text:hover {
@@ -135,8 +137,8 @@ li {
     width: 75%;
     text-align: left;
     margin: auto;
-    margin-top: 1%; /* Add some spacing between partial and full texts */
-    margin-bottom: 1%;
+    margin-top: .5%;
+    margin-bottom: .5%;
 }
 
 .selected-partial {
@@ -168,11 +170,11 @@ li {
 }
 
 .header_text {
-    font-size: 40px;
+    font-size: 2.75em;
 }
 
 .legend_text {
-    font-size: 24px;
+    font-size: 1.5em;
     font-weight: bold;
 }
 
@@ -210,7 +212,7 @@ li {
 }
 
 .main_content.dark-mode .expandable-article .truncated-text {
-    border: 1px solid #ffffff;
+    border-color: #ffffff;
 }
 
 .main_content.dark-mode .expandable-article .truncated-text:hover {
@@ -220,6 +222,7 @@ li {
 .dark-mode .selected-partial {
     background-color: #808080;
 }
+
 
 /* crimson and cream styles */
 .crimson-cream {
@@ -244,7 +247,7 @@ li {
 }
 
 .main_content.crimson-cream .expandable-article .truncated-text {
-    border: 1px solid #fffdd0;
+    border-color: #fffdd0;
 }
 
 .main_content.crimson-cream .expandable-article .truncated-text:hover {
