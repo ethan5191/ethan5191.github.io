@@ -80,6 +80,10 @@
                     <li>Weblogic servers.</li>
                     <li>Oracle Database.</li>
                     <li>Struts 1 application that is slowly been migrated to Spring MVC.</li>
+                    <li>MROWS is used to create orders on reserve Marines. These orders can be for training, school,
+                        activation, or other things. The orders instruct the Marine where to go, when they are traveling,
+                        how they are traveling, who is paying for it, and how much they are estimated to get paid. Specific
+                        orders that are PCS will get sent to MCPDT for their per diem and funding lines.</li>
                 </ul>
             </fieldset>
             <section>
@@ -173,6 +177,10 @@
                     <li>Weblogic servers.</li>
                     <li>Oracle Database.</li>
                     <li>Struts 1 application. Will eventually get moved to Spring MVC in the future.</li>
+                    <li>MCPDT provides SDN's and lines of accounting for PCS orders. Other applications like MROWS, call
+                        MCPDT's web services with there order data. MCDPT determines what type of order it is and responds
+                        with all the per diem and travel funding information that specific order requires. As of today
+                        MCPDT hosts web services for 4 other applications, with a 5th web service being added this fall.</li>
                 </ul>
             </fieldset>
             <section>
