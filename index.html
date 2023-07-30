@@ -12,7 +12,6 @@
         <h1 class="center header_text">Ethan G Vanderbur</h1>
         <h3 class="right">812-701-6110</h3>
     </div>
-    <!--    <img src="temp.jpg" alt="Yea it broke!!!">-->
 </header>
 <body>
 <div class="main_content">
@@ -21,48 +20,49 @@
             <input type="checkbox" id="dark-mode-toggle" onchange="toggleDarkMode()"> Dark Mode
         </label>
         <label id="crimson-mode-label" class="tooltip"><span class="tooltiptext" style="color: #fffdd0">
-                I only cared if I could, not if I should.<br/><span style="color: #dc143c;">GO HOOSIERS</span>!!!!.</span>
+                I only cared if I could, not if I should.<br/><span
+                style="color: #dc143c;">GO HOOSIERS</span>!!!!.</span>
             <input type="checkbox" id="crimson-mode-toggle" onchange="toggleCrimsonMode()"> Crimson Cream Mode
         </label>
         <hr/>
-        <div class="expandable-article">
-            <div class="truncated-text" onclick="toggleFullText(1)">Graduated from IUS...</div>
-            <div class="truncated-text" onclick="toggleFullText(2)">College Studies...</div>
-            <div class="truncated-text" onclick="toggleFullText(3)">Started at TSO...</div>
-            <div class="truncated-text" onclick="toggleFullText(4)">Why I do this...</div>
-            <div class="full-text" id="article1">
-                I graduated from <a href="https://southeast.iu.edu/" target="_blank">Indiana University Southeast</a>
-                in 2014 with a Bachelor's degree in Informatics. I chose informatics over computer science because at
-                the time I thought I would prefer a role as a product owner instead of a developer. Over the years of
-                working as a developer though, I have come to realize that I am much more comfortable as a developer
-                and enjoy being a developer a lot more than I would ever enjoy being a product owner.
-            </div>
-            <div class="full-text" id="article2">
-                My college studies had me learning to work with Java, C, C#, PHP, HTML, and CSS. For my capstone project
-                I was the developer on a three-person team that created a new website for the New Albany fire department.
-                For this project I learned to use Joomla and created an interactive calendar in PHP. We created a
-                basic HTML admin suite as well which allowed the admins to make specific changes to the way that the
-                calendars rules were enforced. The database for this application was a MySql database run through
-                PhpMyadmin. It was in this capstone project that I realized how much I enjoyed the challenges that
-                working with code can present.
-            </div>
-            <div class="full-text" id="article3">
-                I joined the United States Marine Corps working at the TSO in July 2015 as a contractor. A year later I
-                had progressed enough to earn a spot as a federal civilian as part of the USMC. I have grown from a
-                new developer to a seasoned Java developer who can comfortably lead a development team. I have been
-                lucky enough to work with some great people during my time at TSO. My product owner, supervisor, and
-                numerous former team members have all made working on MROWS an absolute pleasure. My time at TSO has
-                taught me to become more detailed in my coding technique. As a consequence of this, I have encouraged
-                my young developers to also try to be as detail oriented as possible.
-            </div>
-            <div class="full-text" id="article4">
-                The short answer of why I do this is because my wife and daughter depend on me to do it, to provide for
-                them. Outside of that I enjoy working with code and solving problems using code. Growing up I always
-                wanted to build stuff like my friends who were good with wood working, but I didn't have the skills to
-                do so. With code, I am able to 'create' stuff. It's not the same as wood working for instance, but
-                it's close enough, and I enjoy it. Plus it's nice being able to work with code and do simple things
-                like auto login to an app, or easily track your families finances with just a single click.
-            </div>
+    </div>
+    <div class="expandable-article">
+        <div class="truncated-text" onclick="toggleFullText(1)">Graduated from IUS...</div>
+        <div class="truncated-text" onclick="toggleFullText(2)">College Studies...</div>
+        <div class="truncated-text" onclick="toggleFullText(3)">Started at TSO...</div>
+        <div class="truncated-text" onclick="toggleFullText(4)">Why I do this...</div>
+        <div class="full-text" id="article1">
+            I graduated from <a href="https://southeast.iu.edu/" target="_blank">Indiana University Southeast</a>
+            in 2014 with a Bachelor's degree in Informatics. I chose informatics over computer science because at
+            the time I thought I would prefer a role as a product owner instead of a developer. Over the years of
+            working as a developer though, I have come to realize that I am much more comfortable as a developer
+            and enjoy being a developer a lot more than I would ever enjoy being a product owner.
+        </div>
+        <div class="full-text" id="article2">
+            My college studies had me learning to work with Java, C, C#, PHP, HTML, and CSS. For my capstone project
+            I was the developer on a three-person team that created a new website for the New Albany fire department.
+            For this project I learned to use Joomla and created an interactive calendar in PHP. We created a
+            basic HTML admin suite as well which allowed the admins to make specific changes to the way that the
+            calendars rules were enforced. The database for this application was a MySql database run through
+            PhpMyadmin. It was in this capstone project that I realized how much I enjoyed the challenges that
+            working with code can present.
+        </div>
+        <div class="full-text" id="article3">
+            I joined the United States Marine Corps working at the TSO in July 2015 as a contractor. A year later I
+            had progressed enough to earn a spot as a federal civilian as part of the USMC. I have grown from a
+            new developer to a seasoned Java developer who can comfortably lead a development team. I have been
+            lucky enough to work with some great people during my time at TSO. My product owner, supervisor, and
+            numerous former team members have all made working on MROWS an absolute pleasure. My time at TSO has
+            taught me to become more detailed in my coding technique. As a consequence of this, I have encouraged
+            my young developers to also try to be as detail oriented as possible.
+        </div>
+        <div class="full-text" id="article4">
+            The short answer of why I do this is because my wife and daughter depend on me to do it, to provide for
+            them. Outside of that I enjoy working with code and solving problems using code. Growing up I always
+            wanted to build stuff like my friends who were good with wood working, but I didn't have the skills to
+            do so. With code, I am able to 'create' stuff. It's not the same as wood working for instance, but
+            it's close enough, and I enjoy it. Plus it's nice being able to work with code and do simple things
+            like auto login to an app, or easily track your families finances with just a single click.
         </div>
     </div>
     <hr/>
@@ -81,13 +81,17 @@
                     <li>Oracle Database.</li>
                     <li>Struts 1 application that is slowly been migrated to Spring MVC.</li>
                     <li>MROWS is used to create orders on reserve Marines. These orders can be for training, school,
-                        activation, or other things. The orders instruct the Marine where to go, when they are traveling,
-                        how they are traveling, who is paying for it, and how much they are estimated to get paid. Specific
-                        orders that are PCS will get sent to MCPDT for their per diem and funding lines.</li>
+                        activation, or other things. The orders instruct the Marine where to go, when they are
+                        traveling,
+                        how they are traveling, who is paying for it, and how much they are estimated to get paid.
+                        Specific
+                        orders that are PCS will get sent to MCPDT for their per diem and funding lines.
+                    </li>
                 </ul>
             </fieldset>
             <section>
-                <h3 class="center_text">Personal MROWS accomplishments <span class="accom_date_range">(June 2015 - Present)</span></h3>
+                <h3 class="center_text">Personal MROWS accomplishments <span class="accom_date_range">(June 2015 - Present)</span>
+                </h3>
                 <dl>
                     <dt id="tcm" onclick="displayDd('tcmDD');" class="info_header">Reserve Travel Module</dt>
                     <dd id="tcmDD" class="info_detail">Working with another dev team we created a Soap web service
@@ -178,13 +182,16 @@
                     <li>Oracle Database.</li>
                     <li>Struts 1 application. Will eventually get moved to Spring MVC in the future.</li>
                     <li>MCPDT provides SDN's and lines of accounting for PCS orders. Other applications like MROWS, call
-                        MCPDT's web services with there order data. MCDPT determines what type of order it is and responds
+                        MCPDT's web services with there order data. MCDPT determines what type of order it is and
+                        responds
                         with all the per diem and travel funding information that specific order requires. As of today
-                        MCPDT hosts web services for 4 other applications, with a 5th web service being added this fall.</li>
+                        MCPDT hosts web services for 4 other applications, with a 5th web service being added this fall.
+                    </li>
                 </ul>
             </fieldset>
             <section>
-                <h3 class="center_text">Personal MCPDT accomplishments <span class="accom_date_range">(July 2022 - Present)</span></h3>
+                <h3 class="center_text">Personal MCPDT accomplishments <span class="accom_date_range">(July 2022 - Present)</span>
+                </h3>
                 <dl>
                     <dt id="eoy" onclick="displayDd('eoyDD');" class="info_header">End Of Year Processes</dt>
                     <dd id="eoyDD" class="info_detail">Our team took over the MCPDT code base in June 2022. The fy
@@ -307,7 +314,11 @@
     <hr/>
     <div>
         <article>
-            <h3 class="center_text">About Me</h3>
+            <div class="about-me-header">
+                <img class="about-me-pic_left" src="pictures/dadAndEllie.jpg" alt="Family pic broke?"/>
+                <h3 class="about-me-header-text">About Me</h3>
+                <img class="about-me-pic_right" src="pictures/momAndEllie.jpg" alt="Family pic broke?"/>
+            </div>
             <ul class="about-me">
                 <li>Family is very important to me.</li>
                 <li>Outside of work I enjoy working with code. I taught myself how to use Spring controllers while
@@ -338,19 +349,25 @@
             <h3 class="center_text">References</h3>
             <dl class="references">
                 <dt>Andrew Staab</dt>
-                <dd>Former supervisor when I first started at TSO. Mr. Staab helped me organize my resume when I was applying
+                <dd>Former supervisor when I first started at TSO. Mr. Staab helped me organize my resume when I was
+                    applying
                     to transition from a contractor to a federal employee in 2016. You can view his LinkedIn profile
                     <a href="https://www.linkedin.com/in/andrewstaab/" target="_blank">here</a>.
                 </dd>
                 <dt>Mitchell Phillips</dt>
-                <dd>Former team lead for the MROWS application. We worked on the 'Reserve Travel Module' project together.
-                    He also worked on MCDPT before our team took it over. Currently, he is co-team lead on the TMEP project at
+                <dd>Former team lead for the MROWS application. We worked on the 'Reserve Travel Module' project
+                    together.
+                    He also worked on MCDPT before our team took it over. Currently, he is co-team lead on the TMEP
+                    project at
                     the TSO. Phone: 765-610-5892
                 </dd>
                 <dt>Michael Rudolphi</dt>
-                <dd>Engineer for the enterprise support branch at TSO. I worked with Mr. Rudolphi when we moved MROWS from
-                    Hudson to Jenkins. Mr. Rudolphi also handles any updates to our divisions tools like Nexus and Fortify.
-                    You can view his LinkedIn profile <a href="https://www.linkedin.com/in/michael-r-54b70720/" target="_blank">
+                <dd>Engineer for the enterprise support branch at TSO. I worked with Mr. Rudolphi when we moved MROWS
+                    from
+                    Hudson to Jenkins. Mr. Rudolphi also handles any updates to our divisions tools like Nexus and
+                    Fortify.
+                    You can view his LinkedIn profile <a href="https://www.linkedin.com/in/michael-r-54b70720/"
+                                                         target="_blank">
                         here</a>.
                 </dd>
                 <dt>Jeff Arrowood</dt>
@@ -363,7 +380,7 @@
     </div>
     <hr/>
     <script src="article.js"></script>
-    <img src="logo.png" alt="My logo didn't load?">
+    <img class="logo" src="pictures/logo.png" alt="My logo didn't load?">
 </div>
 </body>
 <footer>

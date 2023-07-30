@@ -23,10 +23,6 @@ li {
     list-style-type: square;
 }
 
-img {
-    margin-left: 97%;
-}
-
 .tooltip {
   position: relative;
   cursor: pointer;
@@ -193,11 +189,35 @@ img {
 .accom_date_range {
     font-weight: normal;
     font-style: italic;
-    font-size: .7em;
+    font-size: .75em;
 }
 
 .about-me {
     font-size: 1em;
+}
+
+.about-me-header {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    margin-bottom: -2.35%;
+}
+
+.about-me-header-text {
+    margin-top: 2.75%;
+}
+
+.about-me-pic_left, .about-me-pic_right {
+    max-width: 5%;
+    max-height: 5%;
+    border: 2.5px solid #000000;
+}
+.about-me-pic_left {
+    margin-left: 40%;
+}
+
+.about-me-pic_right {
+    margin-right: 40%;
 }
 
 .references {
@@ -212,6 +232,10 @@ img {
 
 .references dd {
     margin-bottom: .5%;
+}
+
+.logo {
+    margin-left: 97%;
 }
 
 
@@ -250,6 +274,15 @@ img {
     background-color: #808080;
 }
 
+.main_content.dark-mode .about-me-pic_left {
+    border-color: #c0c0c0;
+}
+
+.main_content.dark-mode .about-me-pic_right {
+    border-color: #c0c0c0;
+}
+
+
 
 /* crimson and cream styles */
 .crimson-cream {
@@ -283,4 +316,12 @@ img {
 
 .crimson-cream .selected-partial {
     background-color: #808080;
+}
+
+.main_content.crimson-cream .about-me-pic_left {
+    border-color: #fffdd0;
+}
+
+.main_content.crimson-cream .about-me-pic_right {
+    border-color: #fffdd0;
 }
