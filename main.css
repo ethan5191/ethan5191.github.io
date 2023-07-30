@@ -190,19 +190,30 @@ img {
     list-style: none;
 }
 
+.accom_date_range {
+    font-weight: normal;
+    font-style: italic;
+    font-size: .7em;
+}
+
 .about-me {
     font-size: 1em;
 }
 
-.about-me dt {
+.references {
+    font-size: 1em;
+}
+
+.references dt {
     font-size: 1.1em;
     font-weight: bold;
     margin-left: .5%;
 }
 
-.about-me dd {
+.references dd {
     margin-bottom: .5%;
 }
+
 
 
 /* dark mode styles */
