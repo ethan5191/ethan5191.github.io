@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>Ethan Vanderbur Portfolio</title>
     <link rel="stylesheet" href="main.css">
-    <script src="main.js"></script>
+    <script src="js/main.js"></script>
 </head>
 <header>
     <div class="header">
@@ -14,18 +14,19 @@
     </div>
 </header>
 <body>
-<div class="main_content">
-    <div>
-        <label id="dark-mode-label" class="tooltip"><span class="tooltiptext">Devs love dark mode.</span>
-            <input type="checkbox" id="dark-mode-toggle" onchange="toggleDarkMode()"> Dark Mode
-        </label>
-        <label id="crimson-mode-label" class="tooltip"><span class="tooltiptext" style="color: #fffdd0">
+<div>
+    <label id="dark-mode-label" class="tooltip"><span class="tooltiptext">Devs love dark mode.</span>
+        <input type="checkbox" id="dark-mode-toggle" onchange="toggleDarkMode()"> Dark Mode
+    </label>
+    <label id="crimson-mode-label" class="tooltip"><span class="tooltiptext" style="color: #fffdd0">
                 I only cared if I could, not if I should.<br/><span
-                style="color: #dc143c;">GO HOOSIERS</span>!!!!.</span>
-            <input type="checkbox" id="crimson-mode-toggle" onchange="toggleCrimsonMode()"> Crimson Cream Mode
-        </label>
-        <hr/>
-    </div>
+            style="color: #dc143c;">GO HOOSIERS</span>!!!!.</span>
+        <input type="checkbox" id="crimson-mode-toggle" onchange="toggleCrimsonMode()"> Crimson Cream Mode
+    </label>
+    <span id="home" class="home-button">Home</span>
+</div>
+<div class="main_content">
+    <hr/>
     <div class="expandable-article">
         <div class="truncated-text" onclick="toggleFullText(1)">Graduated from IUS...</div>
         <div class="truncated-text" onclick="toggleFullText(2)">College Studies...</div>
@@ -73,7 +74,8 @@
                     MROWS Web application
                 </legend>
                 <ul>
-                    <li class="ul-header">Marine Resource Order Writing Service (MROWS)</li>
+                    <li class="ul-header" id="MrowsHeader"><span class="ul-header-link">Marine Resource Order Writing
+                        Service (MROWS)</span></li>
                     <li>Monolithic web application.</li>
                     <li>Java Backend.</li>
                     <li>Basic HTML, CSS, JSP, with a little JavaScript and JQuery for the UI.</li>
@@ -174,7 +176,7 @@
                     MCPDT Web application
                 </legend>
                 <ul>
-                    <li class="ul-header">Marine Corps Per Diem & Travel (MCPDT)</li>
+                    <li class="ul-header" id="McpdtHeader"><span class="ul-header-link">Marine Corps Per Diem & Travel (MCPDT)</span></li>
                     <li>A bunch of different SOAP web services.</li>
                     <li>Java Backend.</li>
                     <li>Minimal UI that is HTML, CSS, and JSPs.</li>
@@ -379,8 +381,17 @@
         </article>
     </div>
     <hr/>
-    <script src="article.js"></script>
+    <script src="js/article.js"></script>
+    <script src="js/navigation.js"></script>
     <img class="logo" src="pictures/logo.png" alt="My logo didn't load?">
+</div>
+<div class="mrows-content none">
+    <h1>MROWS</h1>
+    <script src="js/toHome.js"></script>
+</div>
+<div class="mcpdt-content none">
+    <h1>MCPDT</h1>
+    <script src="js/toHome.js"></script>
 </div>
 </body>
 <footer>

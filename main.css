@@ -71,6 +71,16 @@ li {
   color: white;
 }
 
+.home-button {
+    float: right;
+    margin-right: .5%;
+    display: none;
+}
+
+.home-button:hover {
+    cursor: pointer;
+}
+
 .footer_text {
     padding: 0px 5%;
     font-size: 1em;
@@ -144,7 +154,7 @@ li {
 }
 
 .selected-partial {
-  background-color: #c0c0c0;
+    background-color: #c0c0c0;
 }
 
 .expandable-question .full-text {
@@ -184,6 +194,11 @@ li {
     font-weight: bold;
     font-size: 1.2em;
     list-style: none;
+}
+
+.ul-header-link:hover {
+    cursor: pointer;
+    background-color: #c0c0c0;
 }
 
 .accom_date_range {
