@@ -84,10 +84,8 @@
                     <li>Struts 1 application that is slowly been migrated to Spring MVC.</li>
                     <li>MROWS is used to create orders on reserve Marines. These orders can be for training, school,
                         activation, or other things. The orders instruct the Marine where to go, when they are
-                        traveling,
-                        how they are traveling, who is paying for it, and how much they are estimated to get paid.
-                        Specific
-                        orders that are PCS will get sent to MCPDT for their per diem and funding lines.
+                        traveling, how they are traveling, who is paying for it, and how much they are estimated to get
+                        paid. Specific orders that are PCS will get sent to MCPDT for their per diem and funding lines.
                     </li>
                 </ul>
             </fieldset>
@@ -97,8 +95,7 @@
                 <dl>
                     <dt id="tcm" onclick="displayDd('tcmDD');" class="info_header">Reserve Travel Module</dt>
                     <dd id="tcmDD" class="info_detail">Working with another dev team we created a Soap web service
-                        between
-                        MROWS and DTMS. This web service allowed Marines to complete and submit a travel claim
+                        between MROWS and DTMS. This web service allowed Marines to complete and submit a travel claim
                         electronically after finishing their orders. This resulted in the Marine getting paid in
                         hours instead of weeks. I worked closely with my team lead to design the database structure
                         for the travel claims. We also created the Soap web service call to DTMS, and created two web
@@ -114,35 +111,31 @@
                     </dd>
                     <dt id="fortify" onclick="displayDd('fortifyDD');" class="info_header">HP Fortify</dt>
                     <dd id="fortifyDD" class="info_detail">Our team was one of the first teams to get HP fortify setup.
-                        As a
-                        result, we lead the charge in creating common solutions for the rest of our division to use
+                        As a result, we lead the charge in creating common solutions for the rest of our division to use
                         to remove findings across the division. Over the span of about 3 months we worked to remove
                         almost 5000 security findings that existed in MROWS and other applications within the division.
                     </dd>
                     <dt id="jenkins" onclick="displayDd('jenkinsDD');" class="info_header">Hudson to Jenkins</dt>
                     <dd id="jenkinsDD" class="info_detail">I worked closely with an experienced engineer to get the
-                        MROWS build
-                        process moved over to Jenkins. This involved creating a JenkinsFile and setting up the different
-                        jobs for test and production builds. The result was a faster build process that is now 100%
-                        auditable. The Jenkins process does the entire production build process. It merges the release
-                        branch into trunk, creates a tag, does the fortify scan, and creates and stages the MROWS
-                        war to that is to be deployed.
+                        MROWS build process moved over to Jenkins. This involved creating a JenkinsFile and setting up
+                        the different jobs for test and production builds. The result was a faster build process that is
+                        now 100% auditable. The Jenkins process does the entire production build process. It merges the
+                        release branch into trunk, creates a tag, does the fortify scan, and creates and stages the
+                        MROWS war to that is to be deployed.
                     </dd>
                     <dt id="spring" onclick="displayDd('springDD');" class="info_header">Spring Migration</dt>
                     <dd id="springDD" class="info_detail">In 2018 the team began the long process of learning to use
-                        Spring MVC
-                        and migrating MROWS from Struts 1 to Spring 5 using the MVC architecture. I took the lead on
-                        this project and created the blueprint for converting two of the bigger areas of the
+                        Spring MVC and migrating MROWS from Struts 1 to Spring 5 using the MVC architecture. I took the
+                        lead on this project and created the blueprint for converting two of the bigger areas of the
                         application. This process involved converting our old action classes to Spring controllers
                         and services. We also had to remove the old struts html tags and replace them with JSTL tags.
                     </dd>
                     <dt id="reports" onclick="displayDd('reportsDD');" class="info_header">iReport Migration</dt>
                     <dd id="reportsDD" class="info_detail">When the DoD purchased iText 7 licenses for all applications,
-                        we
-                        were forced to add it to our application. That way any new PDFs that we create will be created
-                        using the newest version of iText. This caused us to have to migrate all of our old reports
-                        off of iReport and recreate them using Jasper Soft Studio. I took the lead on this project to
-                        transfer all of our reports. To date I have about 20 of the 107 reports moved over.
+                        we were forced to add it to our application. That way any new PDFs that we create will be
+                        created using the newest version of iText. This caused us to have to migrate all of our old
+                        reports off of iReport and recreate them using Jasper Soft Studio. I took the lead on this
+                        project to transfer all of our reports. To date I have about 20 of the 107 reports moved over.
                     </dd>
                     <dt id="other" onclick="displayDd('otherDD');" class="info_header">Other</dt>
                     <dd id="otherDD" class="info_detail">
@@ -176,7 +169,8 @@
                     MCPDT Web application
                 </legend>
                 <ul>
-                    <li class="ul-header" id="McpdtHeader"><span class="ul-header-link">Marine Corps Per Diem & Travel (MCPDT)</span></li>
+                    <li class="ul-header" id="McpdtHeader"><span class="ul-header-link">Marine Corps Per Diem & Travel (MCPDT)</span>
+                    </li>
                     <li>A bunch of different SOAP web services.</li>
                     <li>Java Backend.</li>
                     <li>Minimal UI that is HTML, CSS, and JSPs.</li>
@@ -185,9 +179,9 @@
                     <li>Struts 1 application. Will eventually get moved to Spring MVC in the future.</li>
                     <li>MCPDT provides SDN's and lines of accounting for PCS orders. Other applications like MROWS, call
                         MCPDT's web services with there order data. MCDPT determines what type of order it is and
-                        responds
-                        with all the per diem and travel funding information that specific order requires. As of today
-                        MCPDT hosts web services for 4 other applications, with a 5th web service being added this fall.
+                        responds with all the per diem and travel funding information that specific order requires. As
+                        of today MCPDT hosts web services for 4 other applications, with a 5th web service being added
+                        this fall.
                     </li>
                 </ul>
             </fieldset>
@@ -197,29 +191,25 @@
                 <dl>
                     <dt id="eoy" onclick="displayDd('eoyDD');" class="info_header">End Of Year Processes</dt>
                     <dd id="eoyDD" class="info_detail">Our team took over the MCPDT code base in June 2022. The fy
-                        closeout in
-                        September 2022 was the first time that we had to handle the numerous database scripts to set
-                        up the 2023 funding lines. MCPDT is a funding application that calculates travel and per diem
-                        funding for different types of orders. Since it deals with funding it is paramount that this
-                        application works properly. As the team lead, I took on this responsibility to work closely with
-                        the product owner
-                        to ensure that all the scripts were put together correctly and ran without issue. This lead to a
-                        successful start to the 2023 funding year, with MCPDT continuing to create funding lines for all
-                        the different services that call it.
+                        closeout in September 2022 was the first time that we had to handle the numerous database
+                        scripts to set up the 2023 funding lines. MCPDT is a funding application that calculates travel
+                        and per diem funding for different types of orders. Since it deals with funding it is paramount
+                        that this application works properly. As the team lead, I took on this responsibility to work
+                        closely with the product owner to ensure that all the scripts were put together correctly and
+                        ran without issue. This lead to a successful start to the 2023 funding year, with MCPDT
+                        continuing to create funding lines for all the different services that call it.
                     </dd>
                     <dt id="tab1" onclick="displayDd('tab1DD');" class="info_header">April 2023 changes</dt>
                     <dd id="tab1DD" class="info_detail">The April 2023 release saw numerous changes to the data that
-                        MCPDT
-                        received from MCTFS on its nightly feed. These changes required updating the type files that
-                        read the feed files in every night to ensure they could handle the new file layouts. We also
-                        had to pick up a new file as well as there was new data being passed the MCPDT needed for
+                        MCPDT received from MCTFS on its nightly feed. These changes required updating the type files
+                        that read the feed files in every night to ensure they could handle the new file layouts. We
+                        also had to pick up a new file as well as there was new data being passed the MCPDT needed for
                         future projects.
                     </dd>
                     <dt id="sloa" onclick="displayDd('sloaDD');" class="info_header">SLOA</dt>
                     <dd id="sloaDD" class="info_detail">As part of the DAI transition, all applications are required to
-                        change
-                        from the LOA to the SLOA by October 1, 2024. MCPDT intends to be ahead of the ball on this
-                        deadline, as we are working on getting the SLOA fully implemented into our system by
+                        change from the LOA to the SLOA by October 1, 2024. MCPDT intends to be ahead of the ball on
+                        this deadline, as we are working on getting the SLOA fully implemented into our system by
                         October 1, 2023. I worked closely with the product owner to get the proper table structure
                         created. I then updated the business logic to ensure that both the LOA and SLOA are attached
                         to a given order. This way all of our connecting applications can still use the LOA for now,
@@ -229,16 +219,73 @@
                     </dd>
                     <dt id="dtms" onclick="displayDd('dtmsDD');" class="info_header">DTMS Web Service</dt>
                     <dd id="dtmsDD" class="info_detail">As part of the September release, we are creating a new web
-                        service
-                        between MCPDT and DTMS. This web service will allow DTMS to send travel claim information
-                        to MCPDT, we will update the funding amount on the order, and send the updated amount on to
-                        DAI. I created the WSDL, XSD, and all backing objects needed to allow DTMS to connect to
-                        MCPDT and send the necessary data. I have also added in the necessary business logic to
-                        ensure that the orders pay amount gets updated and sent to DAI.
+                        service between MCPDT and DTMS. This web service will allow DTMS to send travel claim
+                        information to MCPDT, we will update the funding amount on the order, and send the updated
+                        amount on to DAI. I created the WSDL, XSD, and all backing objects needed to allow DTMS to
+                        connect to MCPDT and send the necessary data. I have also added in the necessary business logic
+                        to ensure that the orders pay amount gets updated and sent to DAI.
                     </dd>
                 </dl>
             </section>
         </div>
+    </div>
+    <hr/>
+    <h3 class="center_text">My current role</h3>
+    <div>
+        <article>
+            <ul>
+                <li>I am the development team lead on the team that supports MROWS, MCPDT, and MCSOR. (Mcsor hasn’t had
+                    any actual content changes since 2018, other than a log4j update). I have been the team lead since
+                    the fall of 2019.
+                </li>
+                <li>Our team is made up of 5 developers, 1 scrum master, 2 product owners and 2 help desk individuals
+                    for MROWS, and 1 product owner and 1 help desk individual for MCPDT.
+                </li>
+                <li>We operate in 3-week sprints, typically 15 working days. Our sprints start with a sprint planning,
+                    usually have 2 backlog refinements throughout the sprint, and end with a sprint review and
+                    retrospective. We are an agile development team, as agile as federal policy allows anyway.
+                </li>
+                <li>My day-to-day work has me using IntelliJ, Pl/Sql, Tortoise SVN, Jenkins, Atlassian JIRA, and
+                    Weblogic.
+                </li>
+                <li>
+                    <dl>
+                        <dt>As team lead I:</dt>
+                        <dd>am the first one contacted should there be any potential production issues.</dd>
+                        <dd>am also the one contacted should any new users require access to MCPDT. New user’s for MCDPT
+                            require having there info added into the database via a one time script before they can
+                            actually access the app.
+                        </dd>
+                        <dd>handle all final builds using Jenkins, and I am on all release calls to ensure our database
+                            changes are properly deployed to production. Our organization has its own branch that
+                            handles doing deployments, so I am not hands-on in that regard.
+                        </dd>
+                        <dd>am the one that is on the audit calls whenever we have audit meetings. I also handle any
+                            audit requests for queries from the database or screenshots of the code.
+                        </dd>
+                        <dd>mentor young developers from different backgrounds to get them up to speed on the
+                            applications. I also work closely with them individually to ensure that they are progressing
+                            there development skill set.
+                        </dd>
+                        <dd>do final code reviews and fortify scans before the final production build. I do this to
+                            ensure that we are following best coding practices and to ensure we are not adding fortify
+                            findings.
+                        </dd>
+                    </dl>
+                </li>
+                <li>I strive to have no production issues for all the applications my team supports. I take it as a
+                    personal failure when one of our applications has to have an emergency release to fix a production
+                    issue, regardless of who committed the change. As team lead I expect to catch any issues that my
+                    less experienced developers might miss.
+                </li>
+                <li>All the developers on my team are full stack Java developers. Each of us is expected to work on both
+                    front-end and back-end parts of the applications.
+                </li>
+                <li>We use Jira’s X-Ray for manual testing and use Confluence for our design documents and any other
+                    important documents.
+                </li>
+            </ul>
+        </article>
     </div>
     <hr/>
     <h3 class="center_text">Commonly asked questions</h3>
@@ -247,40 +294,34 @@
             <dl>
                 <dt id="strength" onclick="displayDd('strengthAnswer');" class="info_header">Biggest Strength?</dt>
                 <dd id="strengthAnswer" class="info_detail">Overall Java experience and being detail oriented in all
-                    phases
-                    of development work. I strive to be detail oriented when refining stories, writing and reviewing
-                    code,
-                    and when testing changes.
+                    phases of development work. I strive to be detail oriented when refining stories, writing and
+                    reviewing code, and when testing changes.
                 </dd>
                 <dt id="weakness" onclick="displayDd('weaknessAnswer');" class="info_header">Biggest Weakness?</dt>
                 <dd id="weaknessAnswer" class="info_detail">My two main weaknesses I believe are that my experience is
-                    very
-                    narrow focused due to be in the federal space for so long. I also am a very introverted person when
-                    I don't know people, so I tend to keep to myself until I get comfortable with the people I work
+                    very narrow focused due to be in the federal space for so long. I also am a very introverted person
+                    when I don't know people, so I tend to keep to myself until I get comfortable with the people I work
                     with.
                 </dd>
                 <dt id="favorite" onclick="displayDd('favoriteAnswer');" class="info_header">Favorite part of
                     development?
                 </dt>
                 <dd id="favoriteAnswer" class="info_detail">Backend development working with Java. Java just does things
-                    in
-                    such a way that logically works for me, I think it's because everything is an object.
+                    in such a way that logically works for me, I think it's because everything is an object.
                 </dd>
                 <dt id="least" onclick="displayDd('leastAnswer');" class="info_header">Least favorite part of
                     development?
                 </dt>
                 <dd id="leastAnswer" class="info_detail">UI development. I don't have that natural feel for what people
                     think looks good so, I struggle with CSS and designing nice looking pages. I don't like loosely
-                    typed
-                    languages like JavaScript. I can work with it, but I don't enjoy it.
+                    typed languages like JavaScript. I can work with it, but I don't enjoy it.
                 </dd>
                 <dt id="frustrating" onclick="displayDd('frustratingAnswer');" class="info_header">Most frustrating
                     part of development?
                 </dt>
                 <dd id="frustratingAnswer" class="info_detail">Probably the fact that depending on the time and day
-                    there can
-                    be multiple answers to a single problem. Depending on who you talk to, changes which solution is the
-                    best one. So it's hard to determine at times what the 'best' approach is.
+                    there can be multiple answers to a single problem. Depending on who you talk to, changes which
+                    solution is the best one. So it's hard to determine at times what the 'best' approach is.
                 </dd>
             </dl>
         </div>
@@ -288,9 +329,8 @@
             <dl>
                 <dt id="favProj" onclick="displayDd('favProjAnswer');" class="info_header">Favorite project?</dt>
                 <dd id="favProjAnswer" class="info_detail">Reserve Travel Module. I got to work with a good buddy of
-                    mine
-                    throughout the whole process. We learned how to create Soap services together. Plus we knew what the
-                    end goal was and the benefit it was going to give the end user.
+                    mine throughout the whole process. We learned how to create Soap services together. Plus we knew
+                    what the end goal was and the benefit it was going to give the end user.
                 </dd>
                 <dt id="leastProj" onclick="displayDd('leastProjAnswer');" class="info_header">Least favorite project?
                 </dt>
@@ -323,14 +363,16 @@
             </div>
             <ul class="about-me">
                 <li>Family is very important to me.</li>
+                <li>I am a very open and honest person, regardless of if its good news or bad. I am not afraid to stand
+                    up and say that I caused a problem in production, and I am working on a fix.
+                </li>
                 <li>Outside of work I enjoy working with code. I taught myself how to use Spring controllers while
                     working at home with IntelliJ community edition.
                 </li>
                 <li>I also enjoy many sports: racing (Formula 1, Nascar, IndyCar, IMSA, Formula E), basketball (Indiana
-                    Pacers,
-                    Indiana Hoosiers, Indiana Fever), football (San Fransisco 49ers and Indianapolis Colts), tennis,
-                    the Olympics, the women’s world cup, and the Tour De France. My weekends are usually filled with
-                    watching some kind of sporting event.
+                    Pacers, Indiana Hoosiers, Indiana Fever), football (San Fransisco 49ers and Indianapolis Colts),
+                    tennis, the Olympics, the women’s world cup, and the Tour De France. My weekends are usually filled
+                    with watching some kind of sporting event.
                 </li>
                 <li>I enjoy playing video games, I typically play story driven games like The Last of Us, Horizon Zero
                     Dawn, and Mass Effect. I also enjoy sporting games like Madden, F1, and iRacing.
@@ -341,7 +383,10 @@
                 <li>Favorite movies include: all 3 IronMan movies, Days of Thunder, James Cameron's Avatar 1 and 2,
                     iRobot, and The Incredibles 1 and 2.
                 </li>
-                <li>I am detail oriented at work and at home.</li>
+                <li>I am detail oriented at work and at home. At work my detailed focus helps me ask questions in
+                    refinements that other developers sometimes don't think of. In testing my detailed focus helps me
+                    test even the most corner of corner cases to ensure that changes are working as intended.
+                </li>
             </ul>
         </article>
     </div>
@@ -352,25 +397,19 @@
             <dl class="references">
                 <dt>Andrew Staab</dt>
                 <dd>Former supervisor when I first started at TSO. Mr. Staab helped me organize my resume when I was
-                    applying
-                    to transition from a contractor to a federal employee in 2016. You can view his LinkedIn profile
-                    <a href="https://www.linkedin.com/in/andrewstaab/" target="_blank">here</a>.
+                    applying to transition from a contractor to a federal employee in 2016. You can view his LinkedIn
+                    profile<a href="https://www.linkedin.com/in/andrewstaab/" target="_blank">here</a>.
                 </dd>
                 <dt>Mitchell Phillips</dt>
                 <dd>Former team lead for the MROWS application. We worked on the 'Reserve Travel Module' project
-                    together.
-                    He also worked on MCDPT before our team took it over. Currently, he is co-team lead on the TMEP
-                    project at
-                    the TSO. Phone: 765-610-5892
+                    together. He also worked on MCDPT before our team took it over. Currently, he is co-team lead on the
+                    TMEP project at the TSO. Phone: 765-610-5892
                 </dd>
                 <dt>Michael Rudolphi</dt>
                 <dd>Engineer for the enterprise support branch at TSO. I worked with Mr. Rudolphi when we moved MROWS
-                    from
-                    Hudson to Jenkins. Mr. Rudolphi also handles any updates to our divisions tools like Nexus and
-                    Fortify.
-                    You can view his LinkedIn profile <a href="https://www.linkedin.com/in/michael-r-54b70720/"
-                                                         target="_blank">
-                        here</a>.
+                    from Hudson to Jenkins. Mr. Rudolphi also handles any updates to our divisions tools like Nexus and
+                    Fortify. You can view his LinkedIn profile <a href="https://www.linkedin.com/in/michael-r-54b70720/"
+                                                                  target="_blank">here</a>.
                 </dd>
                 <dt>Jeff Arrowood</dt>
                 <dd>Senior supplier quality engineer at Cummins inc. Lifelong friend, who grew up 1 mile down the road
@@ -392,31 +431,45 @@
             moved to a web application. It has a Java back-end, JSP front end using a combination of HTML, CSS, and
             JavaScript, runs on Weblogic servers, and connects to an Oracle SQL database. The web application was built
             on the Struts 1.1 framework. Over the last few years the team has slowly been moving it to Spring, replacing
-            the old struts actions with Spring controllers and service classes. As of today, the app is about 95% migrated
-            over, with just a few pieces left on the old Struts 1 framework. </li>
+            the old struts actions with Spring controllers and service classes. As of today, the app is about 95%
+            migrated
+            over, with just a few pieces left on the old Struts 1 framework.
+        </li>
         <li>While MROWS is an old monolithic app, the team has done its best over the years to make it more modern and
             flexible. To this end, we have made numerous parts of the application database driven. Some parts like
-            paragraph text, certain rates, and even specific logic flows can be adjusted by the application administrators.
+            paragraph text, certain rates, and even specific logic flows can be adjusted by the application
+            administrators.
             Application administrators are a group of users who have special access and can adjust certain things within
-            the app. Other things like enabling/disabling of jobs and user role permissions have to be done via a one time database script. </li>
+            the app. Other things like enabling/disabling of jobs and user role permissions have to be done via a one
+            time database script.
+        </li>
         <li>MROWS is an order writing system. Certain users have the ‘order writing’ role. This role allows them the
             ability to create orders for marines. This orders, once authenticated become official documents. They tell
-            the marine what type of duty they are doing, when and where they are doing it, who they are reporting to, how
-            they are getting there, and an estimate of how much they will be paid. Some of the most common duty types are
-            annual training, schools, and activation. Once an order writer creates and routes an order it is then approved
-            through different approvals inboxes. The specific inboxes vary based on the specifics of the order. All orders
+            the marine what type of duty they are doing, when and where they are doing it, who they are reporting to,
+            how
+            they are getting there, and an estimate of how much they will be paid. Some of the most common duty types
+            are
+            annual training, schools, and activation. Once an order writer creates and routes an order it is then
+            approved
+            through different approvals inboxes. The specific inboxes vary based on the specifics of the order. All
+            orders
             go through at least the in app authentication routing. This is the final routing before an order becomes an
-            official document.  MROWS allows orders to be created on a single individual or done in a bulk process. This
-            bulk process is used anytime a group of marines are traveling from the same location, to the same destination,
-            using the same travel type, and performing the same duty. </li>
+            official document. MROWS allows orders to be created on a single individual or done in a bulk process. This
+            bulk process is used anytime a group of marines are traveling from the same location, to the same
+            destination,
+            using the same travel type, and performing the same duty.
+        </li>
         <li>As a Marine Corps application, the user interface is nothing special. Our stakeholders have always told us,
             ‘it doesn’t matter how it looks, just as long as it does what we need it to do’. In spite of that the team
-            has recently began to transition certain parts of the application to a Jquery based UI, using the Jquery data
-            tables framework. This process has allowed us to simplify the back-end code that builds these views and improve
+            has recently began to transition certain parts of the application to a Jquery based UI, using the Jquery
+            data
+            tables framework. This process has allowed us to simplify the back-end code that builds these views and
+            improve
             the look and feel of the application, giving it a more modern look. While not a high priority project from
             the stakeholders, it has gained some decent traction. The initial push to move select inboxes to Jquery has
             been well received by the end user and product owners alike. This has allowed us to put more effort into
-            moving more of the application over to Jquery.</li>
+            moving more of the application over to Jquery.
+        </li>
     </ul>
     <script src="js/toHome.js"></script>
 </div>
@@ -425,15 +478,22 @@
     <ul>
         <li>MCPDT is a small application that is made up almost entirely of SOAP web services that it owns. There are
             two different views that are available in production. These two parts of the app are written on the Struts 1
-            framework. The application exists to handle funding for PCS orders sent to it from multiple different applications.
-            As of today there are 4 different applications that call MCDPT web services to get specific funding information.
-            We are working on adding another web service for a sister application to be able to send MCPDT order information
-            so that we can update DAI with this information.</li>
+            framework. The application exists to handle funding for PCS orders sent to it from multiple different
+            applications.
+            As of today there are 4 different applications that call MCDPT web services to get specific funding
+            information.
+            We are working on adding another web service for a sister application to be able to send MCPDT order
+            information
+            so that we can update DAI with this information.
+        </li>
         <li>MCPDT’s funding is entirely database driven. At the end of each fiscal year (October – September), we run a
-            set of database scripts to create the new funding lines for the new fiscal year. </li>
+            set of database scripts to create the new funding lines for the new fiscal year.
+        </li>
         <li>There really isn’t anything else to say about MCPDT. It’s a small app that hosts soap web services for other
-            applications PCS orders. Those applications send MCPDT the order information, MCPDT does validation to ensure
-            it’s a proper order that it can fund, then sends back the correct funding information. </li>
+            applications PCS orders. Those applications send MCPDT the order information, MCPDT does validation to
+            ensure
+            it’s a proper order that it can fund, then sends back the correct funding information.
+        </li>
     </ul>
     <script src="js/toHome.js"></script>
 </div>
