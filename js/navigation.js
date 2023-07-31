@@ -3,21 +3,21 @@ document.getElementById("McpdtHeader").addEventListener('click', mcpdtHeader);
 
 function mrowsHeader() {
     var mainContent = document.querySelector('.main_content');
-    mainContent.style.display = 'none';
+    mainContent.classList.add('none');
     var mrowsContent = document.querySelector('.mrows-content');
-    mrowsContent.style.display = 'block';
+    mrowsContent.classList.remove('none');
     displayHome();
 }
 
 function mcpdtHeader() {
     var mainContent = document.querySelector('.main_content');
-    mainContent.style.display = 'none';
+    mainContent.classList.add('none');
     var mcpdtContent = document.querySelector('.mcpdt-content');
-    mcpdtContent.style.display = 'block';
+    mcpdtContent.classList.remove('none');
     displayHome();
 }
 
 function displayHome() {
     var home = document.getElementById('home');
-    home.style.display = 'block';
+    home.classList.remove('none');
  }

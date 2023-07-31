@@ -4,7 +4,16 @@
 }
 
 .main_content {
-    /*background-image: linear-gradient(to right, #ffcc00, #00a8e8, #cc3300);*/
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+.mrows-content {
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+.mcpdt-content {
     background-color: var(--background-color);
     color: var(--text-color);
 }
@@ -74,7 +83,6 @@ li {
 .home-button {
     float: right;
     margin-right: .5%;
-    display: none;
 }
 
 .home-button:hover {
@@ -228,11 +236,11 @@ li {
     border: 2.5px solid #000000;
 }
 .about-me-pic_left {
-    margin-left: 40%;
+    margin-left: 37%;
 }
 
 .about-me-pic_right {
-    margin-right: 40%;
+    margin-right: 37%;
 }
 
 .references {
@@ -296,7 +304,6 @@ li {
 .main_content.dark-mode .about-me-pic_right {
     border-color: #c0c0c0;
 }
-
 
 
 /* crimson and cream styles */

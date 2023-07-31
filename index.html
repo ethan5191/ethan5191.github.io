@@ -23,7 +23,7 @@
             style="color: #dc143c;">GO HOOSIERS</span>!!!!.</span>
         <input type="checkbox" id="crimson-mode-toggle" onchange="toggleCrimsonMode()"> Crimson Cream Mode
     </label>
-    <span id="home" class="home-button">Home</span>
+    <span id="home" class="home-button none">Home</span>
 </div>
 <div class="main_content">
     <hr/>
@@ -381,16 +381,60 @@
         </article>
     </div>
     <hr/>
-    <script src="js/article.js"></script>
+    <script src="js/modeToggle.js"></script>
     <script src="js/navigation.js"></script>
     <img class="logo" src="pictures/logo.png" alt="My logo didn't load?">
 </div>
 <div class="mrows-content none">
-    <h1>MROWS</h1>
+    <h1>Marine Resource Order Writing Service (MROWS)</h1>
+    <ul>
+        <li>MROWS is a monolithic web application. It was originally built as a windows application, and in 2007 was
+            moved to a web application. It has a Java back-end, JSP front end using a combination of HTML, CSS, and
+            JavaScript, runs on Weblogic servers, and connects to an Oracle SQL database. The web application was built
+            on the Struts 1.1 framework. Over the last few years the team has slowly been moving it to Spring, replacing
+            the old struts actions with Spring controllers and service classes. As of today, the app is about 95% migrated
+            over, with just a few pieces left on the old Struts 1 framework. </li>
+        <li>While MROWS is an old monolithic app, the team has done its best over the years to make it more modern and
+            flexible. To this end, we have made numerous parts of the application database driven. Some parts like
+            paragraph text, certain rates, and even specific logic flows can be adjusted by the application administrators.
+            Application administrators are a group of users who have special access and can adjust certain things within
+            the app. Other things like enabling/disabling of jobs and user role permissions have to be done via a one time database script. </li>
+        <li>MROWS is an order writing system. Certain users have the ‘order writing’ role. This role allows them the
+            ability to create orders for marines. This orders, once authenticated become official documents. They tell
+            the marine what type of duty they are doing, when and where they are doing it, who they are reporting to, how
+            they are getting there, and an estimate of how much they will be paid. Some of the most common duty types are
+            annual training, schools, and activation. Once an order writer creates and routes an order it is then approved
+            through different approvals inboxes. The specific inboxes vary based on the specifics of the order. All orders
+            go through at least the in app authentication routing. This is the final routing before an order becomes an
+            official document.  MROWS allows orders to be created on a single individual or done in a bulk process. This
+            bulk process is used anytime a group of marines are traveling from the same location, to the same destination,
+            using the same travel type, and performing the same duty. </li>
+        <li>As a Marine Corps application, the user interface is nothing special. Our stakeholders have always told us,
+            ‘it doesn’t matter how it looks, just as long as it does what we need it to do’. In spite of that the team
+            has recently began to transition certain parts of the application to a Jquery based UI, using the Jquery data
+            tables framework. This process has allowed us to simplify the back-end code that builds these views and improve
+            the look and feel of the application, giving it a more modern look. While not a high priority project from
+            the stakeholders, it has gained some decent traction. The initial push to move select inboxes to Jquery has
+            been well received by the end user and product owners alike. This has allowed us to put more effort into
+            moving more of the application over to Jquery.</li>
+    </ul>
     <script src="js/toHome.js"></script>
 </div>
 <div class="mcpdt-content none">
-    <h1>MCPDT</h1>
+    <h1>Marine Corps Per Diem & Travel (MCPDT)</h1>
+    <ul>
+        <li>MCPDT is a small application that is made up almost entirely of SOAP web services that it owns. There are
+            two different views that are available in production. These two parts of the app are written on the Struts 1
+            framework. The application exists to handle funding for PCS orders sent to it from multiple different applications.
+            As of today there are 4 different applications that call MCDPT web services to get specific funding information.
+            We are working on adding another web service for a sister application to be able to send MCPDT order information
+            so that we can update DAI with this information.</li>
+        <li>MCPDT’s funding is entirely database driven. At the end of each fiscal year (October – September), we run a
+            set of database scripts to create the new funding lines for the new fiscal year. </li>
+        <li>There really isn’t anything else to say about MCPDT. It’s a small app that hosts soap web services for other
+            applications PCS orders. Those applications send MCPDT the order information, MCPDT does validation to ensure
+            it’s a proper order that it can fund, then sends back the correct funding information. </li>
+    </ul>
     <script src="js/toHome.js"></script>
 </div>
 </body>

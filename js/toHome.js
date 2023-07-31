@@ -2,11 +2,11 @@ document.getElementById("home").addEventListener('click', home);
 
 function home() {
     var mainContent = document.querySelector('.main_content');
-    mainContent.style.display = 'block';
+    mainContent.classList.remove('none');
     var mrowsContent = document.querySelector('.mrows-content');
-    mrowsContent.style.display = 'none';
+    mrowsContent.classList.add('none');
     var mcpdtContent = document.querySelector('.mcpdt-content');
-    mcpdtContent.style.display = 'none';
+    mcpdtContent.classList.add('none');
     var home = document.getElementById('home');
-    home.style.display = 'none';
+    home.classList.add('none');
 }
