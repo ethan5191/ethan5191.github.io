@@ -80,6 +80,14 @@ li {
   color: white;
 }
 
+.none {
+    display: none;
+}
+
+.margin-top-negative-one {
+    margin-top: -1%;
+}
+
 .home-button {
     float: right;
     margin-right: .5%;
@@ -103,11 +111,22 @@ li {
 }
 
 .app_info {
-    flex: 1;
+    flex: 2;
 }
 
-.none {
-    display: none;
+.app_info_tech {
+    flex: 1;
+    margin-right: -20%;
+    margin-top: -.85%;
+}
+
+.app_info_tech_dl {
+    margin-left: 2%;
+}
+
+.app_info_tech_dl_header {
+    font-weight: bold;
+    font-size: 1.3em;
 }
 
 .info_header {
@@ -115,7 +134,7 @@ li {
     cursor: pointer;
     width: 80%;
     margin-left: 10%;
-    margin-top: .75%;
+    margin-top: .5%;
 }
 
 .info_header:hover {
@@ -126,6 +145,10 @@ li {
     width: 75%;
     margin-left: 12.5%;
     display: none;
+}
+
+.section-dl {
+    margin-top: -1.25%;
 }
 
 .expandable-article {

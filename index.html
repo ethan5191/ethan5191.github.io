@@ -69,7 +69,7 @@
     <hr/>
     <h3 class="center_text">My current role</h3>
     <div>
-        <article>
+        <article class="margin-top-negative-one">
             <ul>
                 <li>I am the development team lead on the team that supports MROWS, MCPDT, and MCSOR. (Mcsor hasn’t had
                     any actual content changes since 2018, other than a log4j update). I have been the team lead since
@@ -126,13 +126,28 @@
     </div>
     <hr/>
     <div class="app_info_container">
+        <div class="app_info_tech">
+            <dl class="app_info_tech_dl">
+                <dt class="app_info_tech_dl_header">Tech stack used</dt>
+                <dd>Java 8</dd>
+                <dd>Struts 1</dd>
+                <dd>Sprint 5+</dd>
+                <dd>Oracle SQL</dd>
+                <dd>JSP, HTML, CSS</dd>
+                <dd>JavaScript (Jquery)</dd>
+                <dd>Hp Fortify (MicroFocus)</dd>
+                <dd>Weblogic</dd>
+                <dd>Jenkins</dd>
+                <dd>Soap Web services</dd>
+            </dl>
+        </div>
         <div class="app_info">
             <fieldset>
                 <legend class="legend_text">
                     MROWS Web application
                 </legend>
                 <ul>
-                    <li class="ul-header" id="MrowsHeader"><span class="ul-header-link">Marine Resource Order Writing
+                    <li class="ul-header margin-top-negative-one" id="MrowsHeader"><span class="ul-header-link">Marine Resource Order Writing
                         Service (MROWS)</span></li>
                     <li>Monolithic web application.</li>
                     <li>Java Backend.</li>
@@ -150,7 +165,7 @@
             <section>
                 <h3 class="center_text">Personal MROWS accomplishments <span class="accom_date_range">(June 2015 - Present)</span>
                 </h3>
-                <dl>
+                <dl class="section-dl">
                     <dt id="tcm" onclick="displayDd('tcmDD');" class="info_header">Reserve Travel Module</dt>
                     <dd id="tcmDD" class="info_detail">Working with another dev team we created a Soap web service
                         between MROWS and DTMS. This web service allowed Marines to complete and submit a travel claim
@@ -221,13 +236,28 @@
                 </dl>
             </section>
         </div>
+    </div>
+    <hr/>
+    <div class="app_info_container">
+        <div class="app_info_tech">
+            <dl class="app_info_tech_dl">
+                <dt class="app_info_tech_dl_header">Tech stack used</dt>
+                <dd>Java 8</dd>
+                <dd>Struts 1</dd>
+                <dd>Oracle SQL</dd>
+                <dd>Hp Fortify (MicroFocus)</dd>
+                <dd>Weblogic</dd>
+                <dd>Jenkins</dd>
+                <dd>Soap Web services</dd>
+            </dl>
+        </div>
         <div class="app_info">
             <fieldset>
                 <legend class="legend_text">
                     MCPDT Web application
                 </legend>
                 <ul>
-                    <li class="ul-header" id="McpdtHeader"><span class="ul-header-link">Marine Corps Per Diem & Travel (MCPDT)</span>
+                    <li class="ul-header margin-top-negative-one" id="McpdtHeader"><span class="ul-header-link">Marine Corps Per Diem & Travel (MCPDT)</span>
                     </li>
                     <li>A bunch of different SOAP web services.</li>
                     <li>Java Backend.</li>
@@ -246,7 +276,7 @@
             <section>
                 <h3 class="center_text">Personal MCPDT accomplishments <span class="accom_date_range">(July 2022 - Present)</span>
                 </h3>
-                <dl>
+                <dl class="section-dl">
                     <dt id="eoy" onclick="displayDd('eoyDD');" class="info_header">End Of Year Processes</dt>
                     <dd id="eoyDD" class="info_detail">Our team took over the MCPDT code base in June 2022. The fy
                         closeout in September 2022 was the first time that we had to handle the numerous database
@@ -288,8 +318,171 @@
         </div>
     </div>
     <hr/>
+<!--    <div class="app_info_container">-->
+<!--        <div class="app_info">-->
+<!--            <fieldset>-->
+<!--                <legend class="legend_text">-->
+<!--                    MROWS Web application-->
+<!--                </legend>-->
+<!--                <ul>-->
+<!--                    <li class="ul-header" id="MrowsHeader"><span class="ul-header-link">Marine Resource Order Writing-->
+<!--                        Service (MROWS)</span></li>-->
+<!--                    <li>Monolithic web application.</li>-->
+<!--                    <li>Java Backend.</li>-->
+<!--                    <li>Basic HTML, CSS, JSP, with a little JavaScript and JQuery for the UI.</li>-->
+<!--                    <li>Weblogic servers.</li>-->
+<!--                    <li>Oracle Database.</li>-->
+<!--                    <li>Struts 1 application that is slowly been migrated to Spring MVC.</li>-->
+<!--                    <li>MROWS is used to create orders on reserve Marines. These orders can be for training, school,-->
+<!--                        activation, or other things. The orders instruct the Marine where to go, when they are-->
+<!--                        traveling, how they are traveling, who is paying for it, and how much they are estimated to get-->
+<!--                        paid. Specific orders that are PCS will get sent to MCPDT for their per diem and funding lines.-->
+<!--                    </li>-->
+<!--                </ul>-->
+<!--            </fieldset>-->
+<!--            <section>-->
+<!--                <h3 class="center_text">Personal MROWS accomplishments <span class="accom_date_range">(June 2015 - Present)</span>-->
+<!--                </h3>-->
+<!--                <dl>-->
+<!--                    <dt id="tcm" onclick="displayDd('tcmDD');" class="info_header">Reserve Travel Module</dt>-->
+<!--                    <dd id="tcmDD" class="info_detail">Working with another dev team we created a Soap web service-->
+<!--                        between MROWS and DTMS. This web service allowed Marines to complete and submit a travel claim-->
+<!--                        electronically after finishing their orders. This resulted in the Marine getting paid in-->
+<!--                        hours instead of weeks. I worked closely with my team lead to design the database structure-->
+<!--                        for the travel claims. We also created the Soap web service call to DTMS, and created two web-->
+<!--                        services in MROWS that allowed DTMS to send us either reject or recon claim information.-->
+<!--                    </dd>-->
+<!--                    <dt id="dai" onclick="displayDd('daiDD');" class="info_header">DAI Initiative</dt>-->
+<!--                    <dd id="daiDD" class="info_detail">The DAI initiative was the USMC wide transition from the SABRS-->
+<!--                        accounting system to the DAI accounting system. This involved determining which orders in-->
+<!--                        MROWS needed to go to DAI, populating the newly created DAI tables, and building the process-->
+<!--                        to create the XML file that was sent to DAI. The team also created a process to receive and-->
+<!--                        parse DAI acknowledgement files so that we could track the status of the orders we had sent to-->
+<!--                        DAI.-->
+<!--                    </dd>-->
+<!--                    <dt id="fortify" onclick="displayDd('fortifyDD');" class="info_header">HP Fortify</dt>-->
+<!--                    <dd id="fortifyDD" class="info_detail">Our team was one of the first teams to get HP fortify setup.-->
+<!--                        As a result, we lead the charge in creating common solutions for the rest of our division to use-->
+<!--                        to remove findings across the division. Over the span of about 3 months we worked to remove-->
+<!--                        almost 5000 security findings that existed in MROWS and other applications within the division.-->
+<!--                    </dd>-->
+<!--                    <dt id="jenkins" onclick="displayDd('jenkinsDD');" class="info_header">Hudson to Jenkins</dt>-->
+<!--                    <dd id="jenkinsDD" class="info_detail">I worked closely with an experienced engineer to get the-->
+<!--                        MROWS build process moved over to Jenkins. This involved creating a JenkinsFile and setting up-->
+<!--                        the different jobs for test and production builds. The result was a faster build process that is-->
+<!--                        now 100% auditable. The Jenkins process does the entire production build process. It merges the-->
+<!--                        release branch into trunk, creates a tag, does the fortify scan, and creates and stages the-->
+<!--                        MROWS war to that is to be deployed.-->
+<!--                    </dd>-->
+<!--                    <dt id="spring" onclick="displayDd('springDD');" class="info_header">Spring Migration</dt>-->
+<!--                    <dd id="springDD" class="info_detail">In 2018 the team began the long process of learning to use-->
+<!--                        Spring MVC and migrating MROWS from Struts 1 to Spring 5 using the MVC architecture. I took the-->
+<!--                        lead on this project and created the blueprint for converting two of the bigger areas of the-->
+<!--                        application. This process involved converting our old action classes to Spring controllers-->
+<!--                        and services. We also had to remove the old struts html tags and replace them with JSTL tags.-->
+<!--                    </dd>-->
+<!--                    <dt id="reports" onclick="displayDd('reportsDD');" class="info_header">iReport Migration</dt>-->
+<!--                    <dd id="reportsDD" class="info_detail">When the DoD purchased iText 7 licenses for all applications,-->
+<!--                        we were forced to add it to our application. That way any new PDFs that we create will be-->
+<!--                        created using the newest version of iText. This caused us to have to migrate all of our old-->
+<!--                        reports off of iReport and recreate them using Jasper Soft Studio. I took the lead on this-->
+<!--                        project to transfer all of our reports. To date I have about 20 of the 107 reports moved over.-->
+<!--                    </dd>-->
+<!--                    <dt id="other" onclick="displayDd('otherDD');" class="info_header">Other</dt>-->
+<!--                    <dd id="otherDD" class="info_detail">-->
+<!--                        <ul>-->
+<!--                            <li>Creating numerous admin pieces to allow specific changes to be handled by application-->
+<!--                                administrators. This alters the way specific parts of the app work.-->
+<!--                            </li>-->
+<!--                            <li>JQuery UI migration was migrating a small part of the application to test using JQuery-->
+<!--                                as the new UI of the application. This has been put on hold as the division decides-->
+<!--                                what UI tools it wants all applications to use.-->
+<!--                            </li>-->
+<!--                            <li>Reporting Endorsement module, was a new piece that was created to give order writers the-->
+<!--                                ability to create an endorsement on any order. I created the initial inbox and helped-->
+<!--                                with database design work, but was mainly a tester on this project.-->
+<!--                            </li>-->
+<!--                            <li>Updates to numerous logic pieces throughout the application. Over the years I have-->
+<!--                                altered many different parts of the applications business logic.-->
+<!--                            </li>-->
+<!--                            <li>Mentoring young developers. Since the end of 2019 I have been the team lead. This has-->
+<!--                                seen me mentor numerous young developers on my team. The young developers I have helped-->
+<!--                                have had different backgrounds.-->
+<!--                            </li>-->
+<!--                        </ul>-->
+<!--                    </dd>-->
+<!--                </dl>-->
+<!--            </section>-->
+<!--        </div>-->
+<!--        <div class="app_info">-->
+<!--            <fieldset>-->
+<!--                <legend class="legend_text">-->
+<!--                    MCPDT Web application-->
+<!--                </legend>-->
+<!--                <ul>-->
+<!--                    <li class="ul-header" id="McpdtHeader"><span class="ul-header-link">Marine Corps Per Diem & Travel (MCPDT)</span>-->
+<!--                    </li>-->
+<!--                    <li>A bunch of different SOAP web services.</li>-->
+<!--                    <li>Java Backend.</li>-->
+<!--                    <li>Minimal UI that is HTML, CSS, and JSPs.</li>-->
+<!--                    <li>Weblogic servers.</li>-->
+<!--                    <li>Oracle Database.</li>-->
+<!--                    <li>Struts 1 application. Will eventually get moved to Spring MVC in the future.</li>-->
+<!--                    <li>MCPDT provides SDN's and lines of accounting for PCS orders. Other applications like MROWS, call-->
+<!--                        MCPDT's web services with there order data. MCDPT determines what type of order it is and-->
+<!--                        responds with all the per diem and travel funding information that specific order requires. As-->
+<!--                        of today MCPDT hosts web services for 4 other applications, with a 5th web service being added-->
+<!--                        this fall.-->
+<!--                    </li>-->
+<!--                </ul>-->
+<!--            </fieldset>-->
+<!--            <section>-->
+<!--                <h3 class="center_text">Personal MCPDT accomplishments <span class="accom_date_range">(July 2022 - Present)</span>-->
+<!--                </h3>-->
+<!--                <dl>-->
+<!--                    <dt id="eoy" onclick="displayDd('eoyDD');" class="info_header">End Of Year Processes</dt>-->
+<!--                    <dd id="eoyDD" class="info_detail">Our team took over the MCPDT code base in June 2022. The fy-->
+<!--                        closeout in September 2022 was the first time that we had to handle the numerous database-->
+<!--                        scripts to set up the 2023 funding lines. MCPDT is a funding application that calculates travel-->
+<!--                        and per diem funding for different types of orders. Since it deals with funding it is paramount-->
+<!--                        that this application works properly. As the team lead, I took on this responsibility to work-->
+<!--                        closely with the product owner to ensure that all the scripts were put together correctly and-->
+<!--                        ran without issue. This lead to a successful start to the 2023 funding year, with MCPDT-->
+<!--                        continuing to create funding lines for all the different services that call it.-->
+<!--                    </dd>-->
+<!--                    <dt id="tab1" onclick="displayDd('tab1DD');" class="info_header">April 2023 changes</dt>-->
+<!--                    <dd id="tab1DD" class="info_detail">The April 2023 release saw numerous changes to the data that-->
+<!--                        MCPDT received from MCTFS on its nightly feed. These changes required updating the type files-->
+<!--                        that read the feed files in every night to ensure they could handle the new file layouts. We-->
+<!--                        also had to pick up a new file as well as there was new data being passed the MCPDT needed for-->
+<!--                        future projects.-->
+<!--                    </dd>-->
+<!--                    <dt id="sloa" onclick="displayDd('sloaDD');" class="info_header">SLOA</dt>-->
+<!--                    <dd id="sloaDD" class="info_detail">As part of the DAI transition, all applications are required to-->
+<!--                        change from the LOA to the SLOA by October 1, 2024. MCPDT intends to be ahead of the ball on-->
+<!--                        this deadline, as we are working on getting the SLOA fully implemented into our system by-->
+<!--                        October 1, 2023. I worked closely with the product owner to get the proper table structure-->
+<!--                        created. I then updated the business logic to ensure that both the LOA and SLOA are attached-->
+<!--                        to a given order. This way all of our connecting applications can still use the LOA for now,-->
+<!--                        but when they decide to switch to the SLOA we just have to send that info back to them. This-->
+<!--                        also acts as a test as MROWS will have to change to the SLOA as well, but has more projects-->
+<!--                        in front of SLOA.-->
+<!--                    </dd>-->
+<!--                    <dt id="dtms" onclick="displayDd('dtmsDD');" class="info_header">DTMS Web Service</dt>-->
+<!--                    <dd id="dtmsDD" class="info_detail">As part of the September release, we are creating a new web-->
+<!--                        service between MCPDT and DTMS. This web service will allow DTMS to send travel claim-->
+<!--                        information to MCPDT, we will update the funding amount on the order, and send the updated-->
+<!--                        amount on to DAI. I created the WSDL, XSD, and all backing objects needed to allow DTMS to-->
+<!--                        connect to MCPDT and send the necessary data. I have also added in the necessary business logic-->
+<!--                        to ensure that the orders pay amount gets updated and sent to DAI.-->
+<!--                    </dd>-->
+<!--                </dl>-->
+<!--            </section>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--    <hr/>-->
     <h3 class="center_text">Commonly asked questions</h3>
-    <div class="app_info_container">
+    <div class="app_info_container margin-top-negative-one">
         <div class="app_info">
             <dl>
                 <dt id="strength" onclick="displayDd('strengthAnswer');" class="info_header">Biggest Strength?</dt>
@@ -394,7 +587,7 @@
     <div>
         <article>
             <h3 class="center_text">References</h3>
-            <dl class="references">
+            <dl class="references margin-top-negative-one">
                 <dt>Andrew Staab</dt>
                 <dd>Former supervisor when I first started at TSO. Mr. Staab helped me organize my resume when I was
                     applying to transition from a contractor to a federal employee in 2016. You can view his LinkedIn
@@ -426,7 +619,7 @@
 </div>
 <div class="mrows-content none">
     <h1>Marine Resource Order Writing Service (MROWS)</h1>
-    <ul>
+    <ul class="margin-top-negative-one">
         <li>MROWS is a monolithic web application. It was originally built as a windows application, and in 2007 was
             moved to a web application. It has a Java back-end, JSP front end using a combination of HTML, CSS, and
             JavaScript, runs on Weblogic servers, and connects to an Oracle SQL database. The web application was built
@@ -475,7 +668,7 @@
 </div>
 <div class="mcpdt-content none">
     <h1>Marine Corps Per Diem & Travel (MCPDT)</h1>
-    <ul>
+    <ul class="margin-top-negative-one">
         <li>MCPDT is a small application that is made up almost entirely of SOAP web services that it owns. There are
             two different views that are available in production. These two parts of the app are written on the Struts 1
             framework. The application exists to handle funding for PCS orders sent to it from multiple different
