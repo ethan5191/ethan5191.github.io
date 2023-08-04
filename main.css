@@ -106,6 +106,10 @@ li {
     text-align: center;
 }
 
+.my-current-role dd {
+    margin-bottom: .15%;
+}
+
 .app_info_container {
     display:flex;
 }
@@ -116,12 +120,16 @@ li {
 
 .app_info_tech {
     flex: 1;
-    margin-right: -10%;
+    margin-right: -2.5%;
     margin-top: -.85%;
 }
 
 .app_info_tech_dl {
     margin-left: 2%;
+}
+
+.app_info_tech_dl dd {
+   margin-left: 5%;
 }
 
 .app_info_tech_dl_header {
@@ -368,5 +376,22 @@ li {
 }
 
 .main_content.crimson-cream .about-me-pic_right {
+    border-color: #fffdd0;
+}
+
+
+.mrows-content.dark-mode hr {
+    border-color: #c0c0c0;
+}
+.mrows-content.crimson-cream hr {
+    border-color: #fffdd0;
+}
+
+
+
+.mcpdt-content.dark-mode hr {
+    border-color: #c0c0c0;
+}
+.mcpdt-content.crimson-cream hr {
     border-color: #fffdd0;
 }
