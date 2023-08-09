@@ -120,16 +120,12 @@ li {
 
 .app_info_tech {
     flex: 1;
-    margin-right: -2.5%;
+    margin-right: 1.5%;
     margin-top: -.85%;
 }
 
 .app_info_tech_dl {
     margin-left: 2%;
-}
-
-.app_info_tech_dl dd {
-   margin-left: 5%;
 }
 
 .app_info_tech_dl_header {
