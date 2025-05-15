@@ -14,6 +14,27 @@
     </div>
 </header>
 <body>
+<div class="update-message">
+    <p>I've updated my portfolio! Check out the latest version here:
+        <a href="https://portfoliov2-ethan-vanderburs-projects.vercel.app/" target="_blank" rel="noopener noreferrer">My Updated Portfolio</a>
+    </p>
+</div>
+
+<style>
+    .update-message {
+        margin-top: 20px; /* Add some space above the message */
+        padding: 15px; /* Add some padding around the message */
+        border: 1px solid #ccc; /* Optional: Add a border */
+        background-color: #f9f9f9; /* Optional: Add a background color */
+        text-align: center; /* Center the text */
+        font-size: 1.1em; /* Adjust font size */
+    }
+
+    .update-message a {
+        color: #007bff; /* Link color */
+        text-decoration: underline; /* Underline the link */
+    }
+</style>
 <div>
     <label id="dark-mode-label" class="tooltip"><span class="tooltiptext">Devs love dark mode.</span>
         <input type="checkbox" id="dark-mode-toggle" onchange="toggleDarkMode()"> Dark Mode
